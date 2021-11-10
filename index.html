@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>   
+		<meta name="description" content="W4PLAY,天天都玩好游戏，折扣游戏，电脑游戏">
+		<meta name="keywords" content="W4PLAY,天天都玩好游戏">
+		<meta name="generator" content="w4play">
+		<meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+		<meta name="screen-orientation" content="portrait"><!--uc强制竖屏-->
+		<meta name="x5-orientation" content="portrait"><!--QQ强制竖屏-->
+		<meta name="full-screen" content="yes"><!--UC强制全屏-->
+		<meta name="x5-fullscreen" content="true"> <!--QQ强制全屏-->
+		<meta name="browsermode" content="application"><!--UC应用模式-->
+		<meta name="x5-page-mode" content="app"><!--QQ应用模式-->
+		<title>W4PLAY-天天都玩好游戏</title>
+		<link rel="stylesheet" type="text/css" href="./css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/swiper.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/dropload.css"/>
+		<style type="text/css">
+			#app {
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+			}
+			.gameBox {
+				flex: 1;
+				overflow-y: scroll;
+			}
+			
+			.gameSmallBox {
+				flex: 1;
+				overflow-y: scroll;
+			}
+						
+			.swiper-container {
+				width: 100%;
+				height: 2.2rem;
+				/* z-index: 1; */
+			} 
+			.swiper-container .swiper-wrapper{
+				max-width: 100%;
+				display: flex;
+			}
+			.swiper-container .swiper-wrapper .swiper-slide{
+				width: 2.98rem;
+				height: 2.2rem;
+				margin: 0.06rem 0 0 0.15rem;
+			}
+			
+			.unactive {display: none;}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<div class="gameBox">
+			<!-- 首页顶部 -->
+			<div class="topbar">
+				<div class="topbarItem">
+					<div class="w4play"></div>
+					<div class="serach">
+						<!-- 搜索框 -->
+						<input type="text" class="serachbox" placeholder="绝地求生" id="gameName">
+						<div class="serachlogo"></div>
+					</div>
+					<div class="userIcon unlogin">
+						<img src="images/public/loginState.png" alt="" style="display: none;">
+					</div>
+				</div>
+			</div>
+			<!-- 今日特惠 -->
+			<div class="todaySpecial">
+				<div class="clock">
+					<img src="./images/index/iconTime.png" alt="">
+				</div>
+				<div class="text ft18">今日特惠</div>
+				<div class="discount ft12 color_white_06">低至2折</div>
+			</div>
+			<!-- 轮播图 -->
+			<div class="swiperBox">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<!-- <div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div> -->
+					</div>
+				</div>
+				<!-- <div class="swiperItem">
+					<div class="pic">
+						<img src="../images/index/game.png" alt="">
+					</div>
+					//游戏名称和倒计时 
+					<div class="info">
+						<div class="gameName ft14 ellipse">末日准备狂:序幕篇章</div>
+						<div class="countDown ft12">
+							<div class="time1 ft12">3天</div>:
+							<div class="time2 ft12">00</div>:
+							<div class="time3 ft12">00</div>:
+							<div class="time4 ft12">00</div>
+						</div>
+					</div>
+					//游戏价格
+					<div class="price">
+						<div class="newPrice ft12 color_price">￥<span class="ft18 ft_weight">123</span></div>
+						<div class="oldPrice ft12 color_white_06">￥123</div>
+						<div class="discount ft16">2.8折</div>
+					</div>
+				</div> -->
+
+			</div>
+			
+			<!-- 新用户免费领取 -->
+			<div class="freeGameBanner"></div>
+			
+			<!-- 切换热门游戏，折扣热销，最近更新 -->
+			<div class="changeShop">
+				<div class="page1 ft16 ischange">热门游戏</div>
+				<div class="page2 ft16 color_default">折扣热销</div>
+				<div class="page3 ft16 color_default">最近更新</div>
+			</div>
+			
+				<!-- 游戏列表 -->
+				<section class="gameSmallBox">
+					<ul>
+					<!-- <div class="gameItem">
+						<div class="gamePic">
+							<img src="../images/index/game.png" alt="">
+						</div>
+						<div class="namePrice">
+							<div class="gameName ft14 color_default">侏罗纪世界：进化</div>
+							<div class="priceBox">
+								<div class="oldPrice ft12 color_white_06">￥64</div>
+								<div class="newPrice ft14 color_fault ft_weight">￥<span class="ft16 ft_weight">25</span></div>
+							</div>
+						</div>
+						<div class="discount ft16 color_default ft_weight">2.2 折</div>
+					</div> -->
+					</ul>
+				</section>
+				<!-- 公司信息 -->
+				<div class="company ft12">
+					<div class="company1 ft10"></div>
+					<div class="company2 ft10"></div>
+				</div>
+			</div>
+			
+			<!-- 登录 -->
+			<div class="container2 unactive">
+				<div class="loginBox">
+					<div class="loginTitle"></div>
+					<div class="titleLight"></div>
+					<div class="number1 ft14">手机号码</div>
+					<div class="number2">
+						<input type="text" class="account color_white_1" id="phone" placeholder="&nbsp;输入11位手机号">
+					</div>
+					<div class="message1 ft14">短信验证码</div>
+					<div class="message2">
+						<input type="text" class="smsCode color_white_1" id="password">
+						<div class="code ft14">获取验证码</div>
+					</div>
+					<div class="agreement">
+						<div class="agree1 ft12">注册即同意</div>
+						<div class="agree2 ft12">《用户服务协议》</div>
+					</div>
+					<div class="loginBtn"></div>
+					<div class="close"></div>
+				</div>
+			</div>
+			
+			<!-- 弹出框 新用户专享 -->
+			<div class="ejectBox unactive">
+				<!-- 弹框盒 -->
+				<div class="ejectSmallBox">
+					<!-- 游戏展示框 -->
+					<div class="ejectGetGame">
+						<div class="timeBox ft12">
+							<div class="hour"></div>
+							<div class="minute"></div>
+							<div class="second"></div>
+						</div>
+					</div>
+					<div class="ejectText ft12">恭喜获得首次免单快去下单吧！</div>
+					<div class="ejectBtn"></div>
+				</div>
+			</div>
+			
+			<!-- 最小化首单全返 -->
+			<div class="firstOrder unactive">
+				<div class="timeBox">
+					<div class="hour"></div>:
+					<div class="minute"></div>:
+					<div class="second"></div>
+				</div>
+			</div>
+			
+			<!-- 联系客户按钮 -->
+			<div class="customerService" onclick="url()">	
+			
+		</div>
+		<script>
+		 (function (w, d, n, a, j) {
+		  w[n] = w[n] || function () {
+		   (w[n].a = w[n].a || []).push(arguments);
+		  };
+		  j = d.createElement('script');
+		  j.async = true;
+		  j.src ='https://qiyukf.com/script/034c03bd656678dc8584dcdf671baed4.js';
+		  d.body.appendChild(j);
+		 })(window, document, 'ysf');
+		</script>
+	</body>
+	<script type="text/javascript" src="./js/domin.js"></script>
+	<script type="text/javascript" src="./js/zepto.min.js"></script>
+	<script type="text/javascript" src="./js/public.js"></script>
+	<script type="text/javascript" src="./js/swiper.min.js"></script>
+	<script type="text/javascript" src="./js/dropload.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// 存储的信息
+			var userInfo = {
+				userName:$('#phone').val(),
+				userOKF:data.code
+			}
+			
+			var localInfo = JSON.parse(localStorage.getItem('userInfo'))
+			
+			// 点击弹出框 新用户专享 关闭按钮
+			$('.ejectBox .ejectBtn').click(function(){
+				$('.ejectBox').addClass('unactive')
+				$('.firstOrder').removeClass('unactive')
+			})
+			
+			// 点击首单全返小图标
+			$('.firstOrder').click(function(){
+				$('.firstOrder').addClass('unactive')
+				$('.ejectBox').removeClass('unactive')
+			})
+
+			// 点击新用户免费领取
+			$('.freeGameBanner').click(function(){
+				if(localStorage.userInfo == undefined){
+					$('.container2').removeClass('unactive')
+				}else{
+					window.location.href = 'freeGame.html?channel=' + channel
+				}
+			})
+			
+			// 上拉加载更多插件
+			var dropload = $('.gameBox').dropload({
+				domDown:{
+					domClass:'dropload-down',
+					domRefresh:'<div class="dropload-refresh">上拉加载更多</div>',
+					domLoad:'<div class="dropload-load"><span class="loading"></span>加载中...</div>',
+					domNoData:'<div class="dropload-noData">暂无数据</div>'
+				},
+				loadDownFn:function(){
+					// console.log('上拉')
+					// console.log(data.current)
+					// console.log(data.orderType)
+					data.current++;
+					//orderType = 1 折扣 2上架时间 3热销
+					$.ajax({
+						type:'GET',
+						url:onekeyfunDomin + "/index/findData",
+						data:{
+							'current':data.current,
+							'limit':10,
+							'orderType':data.orderType,
+							'OKF_TOKEN':'',
+						},
+						success:function(data){
+							// console.log(data)
+							var records = data.data.rows;
+							var result = '';
+							$.each(records,function(index,item){
+								result += `<li>
+									<div class="gameItem" data-index='${index}'>
+										<div class="gamePic">
+											<img src="${item.image}" alt="">
+										</div>
+										<div class="namePrice">
+											<div class="gameName ft14 color_default ellipse">${item.chinaName}</div>
+											<div class="priceBox">
+												<div class="oldPrice ft12 color_white_06">￥${item.steamSalePrce}</div>
+												<div class="newPrice ft14 color_fault ft_weight">￥<span class="ft16 ft_weight">${item.lowPrice}</span></div>
+											</div>
+										</div>
+										<div class="discount ft16 color_default ft_weight">${item.lowRatio} 折</div>
+									</div>
+								</li>`;
+							})
+							// 点击游戏跳转游戏详情页
+							$(".gameBox .gameSmallBox ul").on('click','.gameItem',function(){
+								window.location.href = 'detail.html?channel=' + channel + '&appId=' + records[$(this).data('index')].appId
+							})
+							setTimeout(function(){
+								$('.gameBox .gameSmallBox ul').append(result);
+								// 每次数据加载完，必须重置
+								dropload.resetload();
+							},1000)
+						},
+						error:function(xhr,type){
+							console.log('Ajax error!');
+							// 即使加载出错，也得重置
+							dropload.resetload();
+						}
+					})
+				}
+			})
+			// 当前的渠道ID
+			var channel = valueByName(location.href,'channel');
+			
+			// 是否满足首单全免活动
+			var activityNum = valueByName(location.href,'activity');
+			
+			
+			// 轮播swiper
+			var mySwiper = new Swiper ('.swiper-container', {
+			  direction: 'horizontal', // 垂直切换选项
+			  loop: false, // 循环模式选项
+			  observer:true,//修改swiper自己或子元素时，自动初始化swiper
+			  observeParents:true,//修改swiper的父元素时，自动初始化swiper
+			  slidesPerView: 'auto',
+			  spaceBetween: 3,
+			  touchRatio : 3,
+			})
+			
+			
+			// 点击热门游戏
+			$('.page1').click(function(){
+				$('.gameBox .gameSmallBox ul').html('')
+				data.orderType = 3
+				data.current = 1
+				setTimeout(function(){
+					// 每次数据加载完，必须重置
+					dropload.resetload();
+				},300)
+				$('.page1').removeClass('color_default').addClass('ischange');
+				$('.page2,.page3').removeClass('ischange').addClass('color_default');
+				// indexGame()
+			})
+			// 点击折扣热销
+			$('.page2').click(function(){
+				$('.gameBox .gameSmallBox ul').html('')
+				data.orderType = 1
+				data.current = 1
+				setTimeout(function(){
+					// 每次数据加载完，必须重置
+					dropload.resetload();
+				},300)
+				$('.page2').removeClass('color_default').addClass('ischange');
+				$('.page1,.page3').removeClass('ischange').addClass('color_default');
+				// indexGame()
+			})
+			// 点击最近更新
+			$('.page3').click(function(){
+				$('.gameBox .gameSmallBox ul').html('')
+				data.orderType = 2
+				data.current = 1
+				setTimeout(function(){
+					// 每次数据加载完，必须重置
+					dropload.resetload();
+				},300)
+				$('.page3').removeClass('color_default').addClass('ischange')
+				$('.page1,.page2').removeClass('ischange').addClass('color_default');
+				// indexGame()
+			})
+			
+			// 获取公司信息数据
+			function getCompanyInfo(){
+				$.ajax({
+					async: true, // 同步加载数据,即等到ajax执行完毕再接着执行下面的语句
+					type:'GET',
+					url:onekeyfunDomin + '/channel/copyright',
+					data: {'www': window.location.host}, // 预传参的数组
+					dataType: 'json', // 数据类型
+					jsonp: 'callback', // 指定回调函数名，与服务器端接收的一致，并回传回来
+					success: function(res){
+						$('.company2').text(res.data.copyright.slice(0,res.data.copyright.length - 1))
+						$('.company1').text(res.data.recordNumber)
+					}
+				})
+			}
+			
+			// 首页热门游戏数据
+			function indexGame(){
+				$.ajax({
+					type:'GET',
+					url:onekeyfunDomin + "/index/findData",
+					data:{
+						'current':data.current,
+						"limit":'8',
+						'orderType':data.orderType,
+						},
+						dataType:'json',
+					success:function(result){
+						// console.log(result)
+						var hotArr = result.data.rows
+						// console.log(hotArr)
+						for(var i = 0;i < hotArr.length;i++){
+							var node = $(`<li>
+								<div class="gameItem">
+									<div class="gamePic">
+										<img src="${hotArr[i].image}" alt="">
+									</div>
+									<div class="namePrice">
+										<div class="gameName ft14 color_default ellipse">${hotArr[i].chinaName}</div>
+										<div class="priceBox">
+											<div class="oldPrice ft12 color_white_06">￥${hotArr[i].steamSalePrce}</div>
+											<div class="newPrice ft14 color_fault ft_weight">￥<span class="ft16 ft_weight">${hotArr[i].lowPrice}</span></div>
+										</div>
+									</div>
+									<div class="discount ft16 color_default ft_weight">${hotArr[i].lowRatio} 折</div>
+								</div>
+							</li>`);
+								node.appendTo('.gameBox .gameSmallBox ul');
+						}
+						
+					}
+				})
+			}
+			
+			var dataTime = {
+					date_d:'',
+					date_h:'',
+					date_m:'00',
+					date_s:'00',
+				}
+			var todayArr = ''
+			// 今日特惠数据
+			function todayCount(){
+				$.ajax({
+					url:onekeyfunDomin + "/index/v2/today/discount",
+					type:'GET',
+					success:function(res){
+						// console.log(res)
+						if(res.flag){
+							var todayArr = res.data
+							var result = ''
+						}			
+						$.each(todayArr,function(index,item){
+							result += ` <div class="swiper-slide" data-index='${index}'>
+								<div class="swiperItem">
+									<div class="pic">
+										<img src="${item.image}" alt="">
+									</div>
+									<div class="info">
+										<div class="gameName ft14 ellipse">${item.chinaName}</div>
+										<div class="countDown countBox${index} ft12">
+											<div class="time1 ft12"></div>:
+											<div class="time2 ft12"></div>:
+											<div class="time3 ft12"></div>:
+											<div class="time4 ft12"></div>
+										</div>
+									</div>
+									<div class="price">
+										<div class="newPrice ft12 color_price">￥<span class="ft18 ft_weight">${item.steamSalePrce}</span></div>
+										<div class="oldPrice ft12 color_white_06">￥${item.steamPrce}</div>
+										<div class="discount ft16">${item.lowRatio}折</div>
+									</div>
+								</div>
+							</div>`;
+						})
+						
+						$('.swiper-wrapper').append(result);
+						// console.log($('.swiper-slide').data('index'))
+						var timers = {};
+						for(var i = 0;i < todayArr.length;i++){
+							countTime(i)
+						}
+						function countTime(i){ 
+							timers['ttt'+i] = setInterval(function(){
+								var now = new Date().getTime()
+								var end = todayArr[i].discountTime
+								var leftTime = end - now
+								var d = 0,
+									h = 0,
+									m = 0; //时间默认值
+								if(leftTime > 100){
+									d = Math.floor(leftTime / 1000 / 60 / 60 / 24)
+									h = Math.floor((leftTime / 1000 / 60 / 60) % 24)
+									m = Math.floor((leftTime / 1000 / 60) % 60)
+									s = Math.floor((leftTime / 1000) % 60)
+									ms = Math.floor(leftTime % 1000 / 100)
+									if(ms < 10){
+										ms = ms
+									}
+									if(s < 10){
+										s = '0' + s
+									}
+									if(m < 10){
+										m = '0' + m
+									}
+									if(h < 10){
+										h = '0' + h
+									}
+									//将倒计时赋值到div中
+									dataTime.date_d = d  //这里是渲染的天数
+									dataTime.date_h = h  //这里是渲染的小时
+									dataTime.date_m = m  //这里是渲染的分钟
+									dataTime.date_s = s  //这里是渲染的秒数
+								}else{
+									dataTime.date_h = '00' 
+									dataTime.date_m = '00' 
+									dataTime.date_s = '00'  
+									console.log('已截止')
+								}
+								$('.countBox'+i).find('.time1').html(dataTime.date_d + '天')
+								$('.countBox'+i).find('.time2').html(dataTime.date_h)
+								$('.countBox'+i).find('.time3').html(dataTime.date_m)
+								$('.countBox'+i).find('.time4').html(dataTime.date_s)
+							},1000)
+						}
+						// // 点击今日特惠游戏，进入游戏详情页
+						$('.swiper-container .swiper-wrapper').on('click','.swiper-slide',function(e){
+							console.log(todayArr[$(this).data('index')].appId)
+							window.location.href = 'detail.html?channel=' + channel + '&appId=' + todayArr[$(this).data('index')].appId
+						})
+						
+						var swiper = new Swiper('.swiper-container', {
+							  direction: 'horizontal', // 垂直切换选项
+							  loop: false, // 循环模式选项
+							  observer:true,//修改swiper自己或子元素时，自动初始化swiper
+							  observeParents:true,//修改swiper的父元素时，自动初始化swiper
+							  slidesPerView: 'auto',
+							  spaceBetween: 4,
+							  touchRatio : 1,
+						    });
+							
+					}
+				})
+			}	
+			
+			// 点击搜索跳转搜索页面
+			$('.serachlogo').click(function(){
+				goSerach()
+			})
+			
+			todayCount()
+			getCompanyInfo()
+			// 检查之前是否登陆过
+			readyLogin()
+			
+			// 点击头像进入我的订单
+			$('.userIcon').on('touchstart',function(){
+				if(localStorage.userInfo === undefined){
+					$('.container2').removeClass('unactive')
+				}else{
+					window.location.href = 'myOrder.html?channel=' + channel
+				}
+			})
+			
+			// 判断用户是否参加过活动
+			function activityJoin(){
+				if(localStorage.userInfo === undefined){
+					console.log('未登录')
+				}else{
+					$.ajax({
+						url:onekeyfunDomin + '/people/activity/join',
+						data:{'OKF_TOKEN':localInfo.userOKF},
+						success:function(res){
+							// console.log(res)
+							if(res.data == 1){
+								$('.freeGameBanner').addClass('unactive')
+							}else{
+								$('.freeGameBanner').removeClass('unactive')
+							}
+						}
+					})
+				}
+			}
+			
+			// 检测用户是否还拥有首单全返的优惠
+			function activityOrder(){
+				if(localStorage.userInfo === undefined){
+					console.log('未登录')
+				}else{
+					if(activityNum == 1){						$('.firstOrder').removeClass('unactive')
+						$.ajax({
+							url:onekeyfunDomin + '/activity/join',
+							data:{'OKF_TOKEN':localInfo.userOKF},
+							success:function(res){
+								// console.log(res)
+								fifteenMin(res.data.activeLong)
+							}
+						})					}else{
+						console.log('没有进过详情页或者已经参与过首单全免')
+					}
+				}
+			}
+			
+			activityOrder()
+			activityJoin()
+			
+			
+			window.addEventListener('pageshow', function (event) {
+			//event.persisted属性为true时，表示当前文档是从往返缓存中获取
+			  if (event.persisted) location.reload();
+			 });
+		})
+	</script>
+</html>

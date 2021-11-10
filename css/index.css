@@ -1,0 +1,259 @@
+/* 顶部 */
+.topbar{width: 100%;height: 0.66rem;background-color: #051824;display: flex;align-items: center;}
+.topbar .topbarItem{width: 3.75rem;height: 0.36rem;display: flex;align-items: center;}
+.topbar .topbarItem .w4play{width: 1.04rem;height: 0.25rem;margin-left: 0.16rem;background: url(../images/index/w4playlogo.png)no-repeat;background-size: cover;}
+.topbar .topbarItem .serach{width: 1.36rem;height: 0.36rem;margin-left: 0.6rem;background-color: #0b273a;border-radius: 33px;display: flex;align-items: center;}
+.topbar .topbarItem .serach .serachbox{width: 0.9rem;height: 0.21rem;margin-left: 0.12rem;background-color: #0b273a;color: #FFFFFF;}
+.topbar .topbarItem .serach .serachlogo{width: 0.24rem;height: 0.24rem;background: url(../images/index/iconSearch.png)no-repeat;cursor: pointer;background-size: cover;}
+.topbar .topbarItem .userIcon{width: 0.36rem;height: 0.36rem;margin-left: 0.08rem;border-radius: 50%;position: relative;}
+.topbar .topbarItem .userIcon img {width: 100%;height: 100%;position: absolute;}
+.unlogin {background-color: black;}
+/* 今日特惠 */
+.todaySpecial {width: 100%;height: 0.26rem;margin-top: 0.14rem;display: flex;align-items: center;}
+.todaySpecial .clock {width: 0.2rem;height: 0.2rem;margin-left: 0.16rem;position: relative;}
+.todaySpecial .clock img{width: 100%;height: 100%;position: absolute;}
+.todaySpecial .text {min-width: 0.8rem;height: 0.26rem;margin-left: 0.06rem;}
+.todaySpecial .discount {width: 0.52rem;line-height: 0.2rem;margin-left: 0.1rem;background: rgba(0,0,0,0.40);border-radius: 2px;text-align: center;}
+
+/* 轮播图 */
+.swiperBox {width: 100%;height: 2.20rem;display: flex;}
+.swiperBox .swiperItem {width: 2.98rem;height: 2.20rem;background-color: #051824;display: flex;flex-direction: column;}
+.swiperBox .swiperItem .pic {width: 2.82rem;height: 1.40rem;margin: 0.08rem 0 0 0.08rem;position: relative;}
+.swiperBox .swiperItem .pic img{width: 100%;height: 100%;position: absolute;}
+.swiperBox .swiperItem .info {width: 2.78rem;height: 0.21rem;margin: 0.08rem 0 0 0.11rem;display: flex;justify-content: space-between;}
+.swiperBox .swiperItem .info .gameName {width: 1.40rem;height: 0.19rem;font-weight: 800;}
+.swiperBox .swiperItem .info .countDown {width: 1.14rem;height: 0.21rem;display: flex;}
+.swiperBox .swiperItem .info .countDown .time1{min-width: 0.3rem;line-height: 0.21rem;background-color: #f9b94e;border-radius: 4px;margin-right: 0.02rem;text-align: center;}
+.swiperBox .swiperItem .info .countDown .time2{width: 0.23rem;line-height: 0.21rem;background-color: #f9b94e;border-radius: 4px;margin: 0 0.02rem 0 0.02rem;text-align: center;}
+.swiperBox .swiperItem .info .countDown .time3{width: 0.23rem;line-height: 0.21rem;background-color: #f9b94e;border-radius: 4px;margin: 0 0.02rem 0 0.02rem;text-align: center;}
+.swiperBox .swiperItem .info .countDown .time4{width: 0.23rem;line-height: 0.21rem;background-color: #f9b94e;border-radius: 4px;margin-left: 0.02rem;text-align: center;}
+.swiperBox .swiperItem .price {width: 2.80rem;height: 0.31rem;margin: 0.04rem 0 0 0.09rem;display: flex;align-items: center;}
+.swiperBox .swiperItem .price .newPrice {width: 0.50rem;line-height: 0.31rem;}
+.swiperBox .swiperItem .price .oldPrice {width: 0.27rem;height: 0.15rem;margin-left: 0.08rem;font-weight: 400;text-decoration:  line-through;}
+.swiperBox .swiperItem .price .discount {width: 0.57rem;line-height: 0.25rem;background: linear-gradient(135deg,#1a4f6c, rgba(11,39,58,0.00));margin-left: 1.38rem;text-align: center;color: #d8f0ff;font-weight: 700;margin-top: -0.06rem;}
+
+/* 切换热门游戏，折扣热销，最近更新 */
+.changeShop {width: 100%;height: 0.44rem;margin-top: 0.26rem;display: flex;}
+.changeShop .page1 {min-width: 0.66rem;height: 0.33rem;margin-left: 0.39rem;}
+.changeShop .page2 {min-width: 0.66rem;height: 0.33rem;margin-left: 0.52rem;}
+.changeShop .page3 {min-width: 0.66rem;height: 0.33rem;margin-left: 0.52rem;}
+
+.ischange {border-bottom: 2px #5dd0ff solid;color: #5dd0ff;}
+
+/* 游戏列表 */
+.gameItemBox1 {width: 100%;height: 100%;display: flex;flex-direction: column;}
+.gameItemBox2 {width: 100%;height: 100%;display: flex;flex-direction: column;}
+.gameItemBox3 {width: 100%;height: 100%;display: flex;flex-direction: column;}
+.gameItem {width: 3.47rem;height: 0.62rem;background: #051824;margin: 0.09rem 0 0 0.14rem;display: flex;align-items: center;justify-content: space-between;}
+.gameItem .gamePic {width: 0.96rem;height: 0.46rem;background-color: white;margin-left: 0.08rem;position: relative;}
+.gameItem .gamePic img{width: 100%;height: 100%;position: absolute;}
+.gameItem .namePrice {width: 1.12rem;height: 0.45rem;margin-right: 0.24rem;}
+.gameItem .namePrice .gameName {min-width: 1.12rem;height: 0.22rem;}
+.gameItem .namePrice .priceBox {width: 0.58rem;height: 0.23rem;display: flex;align-items: center;margin-top: 0.02rem;}
+.gameItem .namePrice .priceBox .oldPrice{width: 0.22rem;line-height: 0.18rem;text-decoration: line-through;}
+.gameItem .namePrice .priceBox .newPrice{min-width: 1rem;line-height: 0.24rem;margin-left: 0.16rem;font-family: DINPro;}
+.gameItem .discount {width: 0.73rem;line-height: 0.2rem;background: linear-gradient(135deg,#1a4f6c, rgba(11,39,58,0.00));margin-right: 0.16rem;text-align: center;}
+
+.gameBox1 {width: 1rem;height: 0.95rem;position: relative;top: 0.7rem;left: 1.53rem;}
+.gameBox1 .textInfo {min-width: 2.05rem;height: 0.2rem;position: absolute;left: -0.6rem;line-height: 0.2rem;display: flex;color: rgba(227, 247, 255, 0.12);font-family: PingFang SC;}
+
+::webkit-scrollbar   //1 滚动条整体部分，其中的属性有width,height,background,border（就和一个块级元素一样）等。
+::webkit-scrollbar-button //2 滚动条两端的按钮。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。
+::webkit-scrollbar-track   //3  外层轨道。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。
+::webkit-scrollbar-track-piece //4  内层轨道，滚动条中间部分（除去）。
+::webkit-scrollbar-thumb  //5  滚动条里面可以拖动的那部分
+::webkit-scrollbar-corner  //6  边角
+::webkit-resizer  //7   定义右下角拖动块的样式
+
+.container2 {width: 100%;height: 300%;background: rgba(6,26,40,0.47);position: absolute;z-index: 5;top: 0;left: 0;}
+.container2 .loginBox {width: 3.15rem;height: 3.55rem;background-color: #0d2d42;position: fixed;top: 1.8rem;left: 0.3rem;display: flex;flex-direction: column;border: 1px solid rgba(227,163,255,0.24);border-radius: 10px;}
+.loginBox .loginTitle {width: 2.82rem;height: 0.71rem;margin: 0.18rem 0 0 0.18rem;background: url(../images/public/bannerTitle.png)no-repeat;background-size: cover;}
+.loginBox .titleLight {width: 2.33rem;height: 1.84rem;position: absolute;left: 0.98rem;top: -0.98rem;background: url(../images/public/bannerPic.png)no-repeat;background-size: cover;}
+.container2 .loginBox .number1 {width: 0.6rem;height: 0.2rem;color: rgba(235,235,245,0.65);margin: 0.15rem 0 0 0.18rem;}
+.container2 .loginBox .number2 {width: 2.72rem;height: 0.36rem;background-color: rgba(5,24,36,0.8);margin: 0.04rem 0 0 0.18rem;display: flex;align-items: center;}
+.container2 .loginBox .number2 input{width: 1.7rem;height: 0.2rem;padding-left: 0.08rem;background-color: rgba(5,24,36,0.6);}
+.container2 .loginBox .message1 {width: 0.8rem;height: 0.2rem;color: rgba(235,235,245,0.65);margin: 0.12rem 0 0 0.18rem;}
+.container2 .loginBox .message2 {width: 2.72rem;height: 0.36rem;background-color: rgba(5,24,36,0.8);margin: 0.04rem 0 0 0.18rem;display: flex;align-items: center;}
+.container2 .loginBox .message2 input{width: 1.5rem;height: 0.2rem;padding-left: 0.08rem;background-color: rgba(5,24,36,0.6);}
+.container2 .loginBox .message2 .code{min-width: 1rem;height: 0.2rem;color: #5cd0ff;cursor: pointer;text-align: left;text-align: right;margin-left: 0.08rem;}
+.container2 .loginBox .agreement {width: 1.8rem;height: 0.2rem;margin: 0.10rem 0 0 0.15rem;display: flex;}
+.container2 .loginBox .agreement .agree1{width: 0.68rem;height: 0.2rem;text-align: center;color: rgba(216,240,255,0.65);}
+.container2 .loginBox .agreement .agree2{width: 1rem;height: 0.2rem;text-align: center;color: rgba(216,240,255,0.85);}
+.container2 .loginBox .loginBtn {width: 1.87rem;height: 0.45rem;line-height: 0.45rem;background: url(../images/public/loginBtn.png)no-repeat;background-size: cover;
+margin: 0.2rem 0 0 0.62rem;cursor: pointer;}
+/* 登陆框关闭按钮 */
+.loginBox .close {
+	width: 0.28rem;
+	height: 0.28rem;
+	background: url(../images/public/closeBtn.png)no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 3;
+	bottom: -0.7rem;
+	left: 1.4rem;
+}
+
+.gameBox .company{width: 3.47rem;height: 0.62rem;margin: 0.09rem 0 0 0.14rem;}
+.gameBox .company .company1 {width: 3.3rem;height: 0.16rem;margin: 0.28rem 0 0 0.08rem;color: rgba(255,255,255,0.65);text-align: center;}
+.gameBox .company .company2 {width: 2rem;height: 0.16rem;margin: 0.03rem 0 0 0.75rem;color: rgba(255,255,255,0.65);text-align: center;}
+
+.customerService {width: 106px;height: 105px;background: url(../images/detail/7moor.png)no-repeat;position: fixed;right: -10%;bottom: -5%;}
+
+.freeGameBanner {
+	width: 3.61rem;
+	height: 0.97rem;
+	margin: 0.23rem 0 0 0.07rem;
+	background: url(../images/index/freeGameBanner.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.firstOrder {
+	width: 0.66rem;
+	height: 0.77rem;
+	position: fixed;
+	bottom: 0.4rem;
+	left: 0.2rem;
+	background: url(../images/index/firstOrder.png)no-repeat;
+	background-size: cover;
+	z-index: 99;
+}
+
+.firstOrder .timeBox {
+	width: 0.42rem;
+	height: 0.14rem;
+	margin: 0.4rem 0 0 0.08rem;
+	display: flex;
+	font-size: 10px;
+	transform: rotate(-5deg);
+	font-weight: 600;
+	color: #ffffff;
+}
+
+.timeBox .hour {
+	width: 0.1rem;
+	height: 0.14rem;
+}
+.timeBox .minute {
+	width: 0.1rem;
+	height: 0.1rem;
+}
+.timeBox .second {
+	width: 0.1rem;
+	height: 0.1rem;
+}
+
+/* 弹出框 新用户专享 */
+.ejectBox {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.80);
+	position: fixed;
+	z-index: 51;
+	top: 0;
+	left: 0;
+}
+
+.ejectBox .ejectSmallBox {
+	width: 2.91rem;
+	height: 2.93rem;
+	position: absolute;
+	left: 0.33rem;
+	top: 1.89rem;
+}
+
+.ejectSmallBox .ejectGetGame {
+	width: 2.91rem;
+	height: 2.05rem;
+	background: url(../images/detail/detailSave.png)no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+
+.ejectGetGame .timeBox {
+	width: 0.88rem;
+	height: 0.2rem;
+	position: absolute;
+	bottom: 0.07rem;
+	left: 1.1rem;
+	display: flex;
+	justify-content: space-between;
+}
+.timeBox .hour {
+	width: 0.2rem;
+	height: 0.2rem;
+	text-align: center;
+}
+.timeBox .minute {
+	width: 0.2rem;
+	height: 0.2rem;
+	text-align: center;
+}
+.timeBox .second {
+	width: 0.2rem;
+	height: 0.2rem;
+	text-align: center;
+}
+
+/* 游戏详情 */
+.ejectGetGame .gameDetail {
+	width: 1.81rem;
+	height: 0.86rem;
+	margin: 0.45rem 0 0 0.57rem;
+	position: relative;
+}
+
+/* 游戏图 */
+.gameDetail .gameImg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.gameDetail .titlePic {
+	width: 1.81rem;
+	height: 0.22rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/freeGame/titlePic.png)no-repeat;
+	background-size: cover;
+	text-align: center;
+	line-height: 0.22rem;
+}
+
+.titlePic .gameName {
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	color: #ffffff;
+	opacity: 0.8;
+	letter-spacing: 0px;
+}
+
+.gameDetail .priceLabel {
+	width: 0.63rem;
+	height: 0.19rem;
+	background: url(../images/freeGame/priceLabel.png)no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: -0.05rem;
+	right: 0;
+	text-align: center;
+	line-height: 0.19rem;
+}
+
+.ejectSmallBox .ejectText {
+	width: 1.9rem;
+	height: 0.16rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	color: #cccccc;
+	margin: 0.15rem 0 0 0.54rem;
+}
+.ejectSmallBox .ejectBtn {
+	width: 0.66rem;
+	height: 0.77rem;
+	margin: 0.2rem 0 0 1rem;
+	background: url(../images/index/close.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>   
+		<meta name="description" content="W4PLAY,天天都玩好游戏，折扣游戏，电脑游戏">
+		<meta name="keywords" content="W4PLAY,天天都玩好游戏">
+		<meta name="generator" content="w4play">
+		<meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+		<meta name="screen-orientation" content="portrait"><!--uc强制竖屏-->
+		<meta name="x5-orientation" content="portrait"><!--QQ强制竖屏-->
+		<meta name="full-screen" content="yes"><!--UC强制全屏-->
+		<meta name="x5-fullscreen" content="true"> <!--QQ强制全屏-->
+		<meta name="browsermode" content="application"><!--UC应用模式-->
+		<meta name="x5-page-mode" content="app"><!--QQ应用模式-->
+		<title>W4PLAY-天天都玩好游戏</title>
+		<link rel="stylesheet" type="text/css" href="./css/public.css"/>
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./css/howToPlayGame.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/swiper.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/common.css">
+		<style type="text/css">
+			.unactive {display: none;}
+		</style>
+	</head>
+	<body style="overflow-x:hidden;">
+		<div id="app">
+			<div style="display: flex;flex-direction: column;">
+				<!-- 首页顶部 -->
+				<div class="topbar">
+					<div class="topbarItem">
+						<div class="w4play"></div>
+						<div class="serach">
+							<!-- 搜索框 -->
+							<input type="text" class="serachbox" placeholder="绝地求生" id="gameName">
+							<div class="serachlogo"></div>
+						</div>
+						<div class="userIcon" style="background-color: black;">
+							<img src="images/public/loginState.png" alt="" style="display: none;">
+						</div>
+					</div>
+				</div>
+				
+				<div class="howPic"></div>
+				<div  class="textBook ft14 color_text1">复制<span>www.we4game.com</span>,通过QQ或微信发送至电脑端</div >
+				<button class="copyBtn ft16 ft_weight color_price color_white_1" data-clipboard-target="span" data-clipboard-action="copy">点击复制链接</button>
+				<div class="copyComputer1 ft14 color_text1">使用电脑浏览器访问复制的链接（或l浏览器直接输入www.we4game.com)，点击下载客户端</div>
+				<div class="website"></div>
+				<div class="copyComputer2 ft14 color_text1">下载完成后，找到下载目录，双击安装包</div>
+				<div class="client"></div>
+				<div class="copyComputer3 ft14 color_text1">安装完成后，登录账户，在我的游戏中启动游戏</div>
+				<div class="clientPic"></div>
+			</div>
+			
+			<!-- 登录 -->
+			<div class="container2 unactive">
+				<div class="loginBox">
+					<div class="loginTitle"></div>
+					<div class="titleLight"></div>
+					<div class="number1 ft14">手机号码</div>
+					<div class="number2">
+						<input type="text" class="account color_white_1" id="phone" placeholder="&nbsp;输入11位手机号">
+					</div>
+					<div class="message1 ft14">短信验证码</div>
+					<div class="message2">
+						<input type="text" class="smsCode color_white_1" id="password">
+						<div class="code ft14">获取验证码</div>
+					</div>
+					<div class="agreement">
+						<div class="agree1 ft12">注册即同意</div>
+						<div class="agree2 ft12">《用户服务协议》</div>
+					</div>
+					<div class="loginBtn"></div>
+					<div class="close"></div>
+				</div>
+			</div>
+			<!-- 联系客户按钮 -->
+			<div class="customerService" onclick="url()">	
+		</div>
+		<script>
+		 (function (w, d, n, a, j) {
+		  w[n] = w[n] || function () {
+		   (w[n].a = w[n].a || []).push(arguments);
+		  };
+		  j = d.createElement('script');
+		  j.async = true;
+		  j.src ='https://qiyukf.com/script/034c03bd656678dc8584dcdf671baed4.js';
+		  d.body.appendChild(j);
+		 })(window, document, 'ysf');
+		</script>
+	</body>
+	<script type="text/javascript" src="./js/domin.js"></script>
+	<script type="text/javascript" src="./js/zepto.min.js"></script>
+	<script type="text/javascript" src="./js/public.js"></script>
+	<script type="text/javascript" src="./js/clipboard.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// 当前的渠道ID
+			var channel = valueByName(location.href,'channel');
+			
+			var clipboard = new ClipboardJS('.copyBtn');
+			
+			clipboard.on('success', function (e) {
+			  console.log(e);
+			});
+			
+			clipboard.on('error', function (e) {
+			  console.log(e);
+			});
+			
+			// 点击logo跳转首页
+			$('.w4play').click(function(){
+				goBackIndex()
+			})
+			
+			// 关闭登陆界面
+			$('.container2 .close').on('click',function(){
+				$('.container2').addClass('unactive')
+			})
+			
+			// 点击头像进入我的订单
+			$('.userIcon').on('touchstart',function(){
+				if(localStorage.userInfo === undefined){
+					$('.container2').removeClass('unactive')
+				}else{
+					window.location.href = 'myOrder.html?channel=' + channel
+				}
+			})
+			 
+			// 手机号验证
+			function checkPhone(){
+				var phone = document.getElementById('phone').value;
+				// /^1[3456789]\d{9}$/
+				if(!(/^1[3456789]\d{9}$/.test(phone))){
+					alert('手机号有误，请重填');
+					return false
+				}else{
+					let count = 60;
+					const countDown = setInterval(()=>{
+						if(count === 0){
+							$('.code').text('重新发送').removeAttr('disabled');
+							$('.code').css({
+								backgroundColor:'rgba(5,24,36,0.8)',
+								color:'#43b7f8'
+							});
+							clearInterval(countDown);
+						}else{
+							$('.code').attr('disabled',true);
+							$('.code').css({
+								backgroundColor:'rgba(5,24,36,0.8)',
+								opacity:0.59,
+								color:'#707070',
+							});
+							$('.code').text(count + '秒重新获取')
+						}
+						count--;
+					},1000);
+				}
+				
+			}
+			
+			// 点击获取验证码
+			$('.code').on('click',function(){
+				checkPhone()
+				var phoneNumber = $('#phone').val()
+				if(phoneNumber == ''){return}
+				console.log(phoneNumber)
+				// 验证手机号
+				$.ajax({
+					type:'GET',
+					url:onekeyfunDomin + '/author/sendSmsCode',
+					data:{'phoneNumber':phoneNumber},
+					dataType:'json',
+					success:function(data){
+						if(data.flag){
+							// 获取验证码成功
+							isCodes = true
+						}else{
+							isCodes = false
+						}
+					}
+				});
+			})
+			// 存储的信息
+			var userInfo = {
+				userName:$('#phone').val(),
+				userOKF:data.code
+			}
+			
+			// 点击注册/登陆按钮
+			$('.loginBtn').click(function(){
+				if(isCodes){
+					headPic = true
+					console.log(headPic)
+					// localStorage.setItem('userName',$('#phone').val())
+					$('.userIcon').removeClass('unlogin')
+					$('.userIcon img').css('display','block')
+					$('.container2').addClass('unactive')
+					// 使用验证码登陆
+					$.ajax({
+						type:'GET',
+						url:onekeyfunDomin + '/author/loginDomestic',
+						data:{
+							'phoneNumber':$('.account').val(),
+							'smsCode':$('.smsCode').val(),
+							'channelAbbr': channel
+						},
+						dataType:'json',
+						success:function(data){
+							console.log(data)
+							userInfo.userName = $('#phone').val()
+							userInfo.userOKF = data.code
+							localStorage.setItem('userInfo',JSON.stringify(userInfo))
+						},
+					});
+				}else{
+					alert('验证码错误')
+				}
+			})
+			  
+			$('.serachlogo').click(function(){
+				goSerach()
+			})
+			readyLogin()
+		})
+	</script>
+</html>

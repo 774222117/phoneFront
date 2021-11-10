@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="description" content="W4PLAY,天天都玩好游戏，折扣游戏，电脑游戏">
+		<meta name="keywords" content="W4PLAY,天天都玩好游戏">
+		<meta name="generator" content="w4play">
+		<meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+		<meta name="screen-orientation" content="portrait">
+		<!--uc强制竖屏-->
+		<meta name="x5-orientation" content="portrait">
+		<!--QQ强制竖屏-->
+		<meta name="full-screen" content="yes">
+		<!--UC强制全屏-->
+		<meta name="x5-fullscreen" content="true">
+		<!--QQ强制全屏-->
+		<meta name="browsermode" content="application">
+		<!--UC应用模式-->
+		<meta name="x5-page-mode" content="app">
+		<!--QQ应用模式-->
+		<title>W4PLAY-天天都玩好游戏</title>
+		<link rel="stylesheet" type="text/css" href="./css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/freeGame.css" />
+		<link rel="stylesheet" type="text/css" href="./css/dropload.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+		<style type="text/css">
+			#app {
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+				background-color: #12183a;
+			}
+
+			.unactive {
+				display: none;
+			}
+			
+			.swiper-container {
+			  width: 100%;
+			  height: 100%;
+			}
+			.swiper-slide {
+				margin-top: 0.22rem;
+				width: 1.77rem!important;
+			  height: 1.08rem;
+			  text-align: center;
+			  font-size: 18px;
+			  display: -webkit-box;
+			  display: -ms-flexbox;
+			  display: -webkit-flex;
+			  display: flex;
+			  -webkit-box-pack: center;
+			  -ms-flex-pack: center;
+			  -webkit-justify-content: center;
+			  justify-content: center;
+			  -webkit-box-align: center;
+			  -ms-flex-align: center;
+			  -webkit-align-items: center;
+			  align-items: center;
+			 transition: 300ms;
+			  transform: scale(0.8);
+			  border-radius: 4px;
+			  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25); 
+			  border: 1px solid #5F29A6;
+			  
+			}
+			.swiper-slide-active,.swiper-slide-duplicate-active{
+			  transform: scale(1);
+			}
+			
+			.slideGame {
+				width: 100%;
+				height: 100%;
+			}
+			
+			/* 游戏名称 */
+			.slideName {
+				width: 100%;
+				height: 0.17rem;
+				/* margin: 0.04rem auto 0 auto; */
+				font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+				color: #ffffff;
+				text-align: center;
+				background: url(images/freeGame/gameItemTitle.png) no-repeat;
+				background-size: cover;
+				/* background-color: red; */
+			}
+			
+			/* 游戏图片 */
+			.slideGamePic {
+				width: 1.57rem;
+				height: 0.75rem;
+				margin: 0.03rem 0 0 0.1rem;
+				position: relative;
+			}
+			
+			.slideGamePic .PicImg {
+				width: 100%;
+				height: 100%;
+			}
+			
+			/* 游戏价格 */
+			.slidePrice {
+				width: 0.51rem;
+				height: 0.39rem;
+				position: absolute;
+				top: 0;
+				right: 0;
+				background: url(images/freeGame/slidePrice.png)no-repeat;
+				background-size: cover;
+			}
+			
+			.slidePrice .price {
+				width: 0.36rem;
+				height: 0.14rem;
+				/* border: 1px yellow solid; */
+				transform: rotate(38deg);
+				position: absolute;
+				top: 0.07rem;
+				right: 0;
+				font-size: 14px;
+				line-height: 0.14rem;
+			}
+			
+			.slidePrice .price .money {
+				font-size: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<div class="gameBox">
+				<!-- 首页顶部 -->
+				<div class="topbar">
+					<div class="topbarItem">
+						<div class="w4play"></div>
+						<div class="serach">
+							<!-- 搜索框 -->
+							<input type="text" class="serachbox" placeholder="绝地求生" id="gameName">
+							<div class="serachlogo"></div>
+						</div>
+						<div class="userIcon unlogin">
+							<img src="images/public/loginState.png" alt="" style="display: none;">
+						</div>
+					</div>
+				</div>
+
+				<!-- 登录 -->
+				<div class="container2 unactive">
+					<div class="loginBox">
+						<div class="loginTitle"></div>
+						<div class="titleLight"></div>
+						<div class="number1 ft14">手机号码</div>
+						<div class="number2">
+							<input type="text" class="account color_white_1" id="phone" placeholder="&nbsp;输入11位手机号">
+						</div>
+						<div class="message1 ft14">短信验证码</div>
+						<div class="message2">
+							<input type="text" class="smsCode color_white_1" id="password">
+							<div class="code ft14">获取验证码</div>
+						</div>
+						<div class="agreement">
+							<div class="agree1 ft12">注册即同意</div>
+							<div class="agree2 ft12">《用户服务协议》</div>
+						</div>
+						<div class="loginBtn"></div>
+						<div class="close"></div>
+					</div>
+				</div>
+
+				<!-- 活动中心 -->
+				<div class="activityCenter">
+					<!-- 顶部图 -->
+					<div class="topPic">
+						<!-- 立即抽取游戏 -->
+						<div class="showGame">
+							<div class="gameBox1">
+								<!-- Swiper -->
+								<div class="swiper-container">
+								  <div class="swiper-wrapper">
+								   <!-- <div class="swiper-slide">
+										<div class="slideGame">
+											<div class="slideName ft12">绝地求生</div>
+											<div class="slideGamePic">
+												<div class="slidePrice">
+													<div class="price"><span>￥</span>150</div>
+												</div>
+												<img class="PicImg" src="./images/freeGame/111.png" alt="">
+											</div>
+										</div>
+									</div>
+								    <div class="swiper-slide"></div>
+								    <div class="swiper-slide"></div> -->
+								  </div>
+								</div>
+							</div>
+							<div class="getGameBtn"></div>
+						</div>
+					</div>
+				</div>
+				<!-- 活动下面区域 -->
+				<div class="activityInfo">
+					<!-- 粉色背景 -->
+					<div class="activityDetail">
+						<!-- 活动详情 -->
+						<div class="activityDetailInfo">
+							<div class="detailTitle"></div>
+							<!-- 介绍文案 -->
+							<div class="detailIntrod">
+								<div class="introdOne">
+									<div class="oneTitle">
+										<div class="numberOne"></div>
+										<div class="text ft14">新用户</div>
+									</div>
+									<div class="oneText ft12">本活动仅限新用户和未参加过活动的用户参加活动 商品为特殊电子产品，抽取后正常情况下不可退换 敬请谅解.</div>
+								</div>
+								<div class="introdTwo">
+									<div class="twoTitle">
+										<div class="numberTwo"></div>
+										<div class="text ft14">游戏库中查看</div>
+									</div>
+									<div class="TwoText ft12">用户可以抽出的免费游戏在游戏库中查看.</div>
+								</div>
+								<div class="introdThree">
+									<div class="threeTitle">
+										<div class="numberThree"></div>
+										<div class="text ft14">抽取游戏为畅享版本</div>
+									</div>
+									<div class="threeText ft12">本轮活动获取游戏均为畅享版游戏，畅享版游戏为 游戏的永久使用权，在网页中可一键启动游戏游玩
+										游戏，不是游戏账号或代充服务或游戏CDKEY.</div>
+								</div>
+								<div class="introdFour">
+									<div class="fourTitle">
+										<div class="numberFour"></div>
+										<div class="text ft14">领取后如何启动</div>
+									</div>
+									<div class="fourText ft12">游戏领取后需要下载W4PALY的PC端运行.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 点击此处，查看如何启动游戏 -->
+					<div class="howToPlay">
+						<div class="playItem">
+							<div class="clickPic"></div>
+							<div class="clickText ft14">点击此处，查看如何启动游戏？</div>
+						</div>
+					</div>
+
+					<!-- 活动奖池 -->
+					<div class="PoorBox">
+						<!-- 背景色 -->
+						<div class="backgroundPic"></div>
+						<div class="falsePic"></div>
+						<!-- 装游戏的盒子 -->
+						<div class="showGameBox">
+							<div class="poorTitle"></div>
+							<div class="gameItemBox">
+								
+								<!-- <div class="gameItem">
+									<img class="gameImg" src="./images/freeGame/111.png">
+									<div class="gameName">以撒的结的结的结的结的</div>
+									<div class="gamePirce ft16 ft_weight">
+										<span class="ft12">￥</span>25
+									</div>
+								</div> -->
+
+							</div>
+						</div>
+					</div>
+					
+					
+					
+				</div>
+			</div>
+			<!-- 弹出框 新用户专享 -->
+			<div class="ejectBox unactive">
+				<!-- 弹框盒 -->
+				<div class="ejectSmallBox">
+					<!-- 游戏展示框 -->
+					<div class="ejectGetGame">
+						<div class="gameDetail">
+							<!-- 游戏图 -->
+							<img class="gameImg" src="" alt="">
+							<div class="titlePic">
+								<!-- 游戏名称 -->
+								<div class="gameName ft14"></div>
+							</div>
+							<!-- 价格 -->
+							<div class="priceLabel">
+								<span class="money">￥</span>
+							</div>
+						</div>
+					</div>
+					<div class="ejectText ft12">初次见面送你一款畅想版游戏吧！</div>
+					<div class="ejectBtn"></div>
+				</div>
+			</div>
+		</div>	
+	</body>
+	<script type="text/javascript" src="./js/domin.js"></script>
+	<script type="text/javascript" src="./js/zepto.min.js"></script>
+	<script type="text/javascript" src="./js/public.js"></script>
+	<script type="text/javascript" src="./js/swiper.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			// 点击此处，查看如何启动游戏
+			$('.playItem').on('touchstart',function(){
+				window.location.href = 'howToPlayGame.html?channel=' + channel
+			})
+			
+			var localInfo = JSON.parse(localStorage.getItem('userInfo'))
+			
+			// 当前的渠道ID
+			var channel = valueByName(location.href,'channel');
+			
+			// 点击顶部logo跳转首页
+			$('.w4play').click(function(){
+				goBackIndex()
+			})
+			
+			var getGameList = {
+				'OKF_TOKEN':localInfo.userOKF,
+				'channelld':channel,
+				'payType':2,
+				'choose':1,
+				'appIds':''
+			}
+			
+			// 点击抽奖之后 好的 按钮
+			$('.ejectBtn').click(function(){
+				$('.ejectBox').addClass('unactive')
+				$.ajax({
+					url:onekeyfunDomin + '/people/activity/create',
+					data:getGameList,
+					success:function(res){
+						console.log(res)
+						console.log(res.message)
+					}
+				})
+			})
+			
+			// 顶部轮播
+			var swiper = new Swiper('.showGame .gameBox1 .swiper-container', {
+			  slidesPerView: 'auto',
+			  spaceBetween: 10,
+			  centeredSlides: true,
+			  loop: false,
+			  observer:true,//修改swiper自己或子元素时，自动初始化swiper
+			  touchRatio : 1,
+			  pagination: {
+			    el: '.swiper-pagination',
+			    clickable: true,
+			  },
+			});
+			
+			// 点击立即抽取
+			$('.getGameBtn').click(function(){
+				if(localStorage.userInfo === undefined){
+					$('.container2').removeClass('unactive')
+				}else{
+					getUserGame()
+				}
+			})
+			
+			// 获取用户领取的游戏
+			function getUserGame(){
+				$.ajax({
+					url:onekeyfunDomin + '/people/activity/join',
+					data:{'OKF_TOKEN':localInfo.userOKF},
+					jsonp:'callback',
+					// type:'GET',
+					// dataType: 'json', // 数据类型
+					// contentType:'application/x-www-form-urlencoded',
+					success:function(res){
+						console.log(res)
+						if(res.data == 0 && res.flag == true){
+							$.ajax({
+								url:onekeyfunDomin + '/people/activity/findGames',
+								data:{'OKF_TOKEN':localInfo.userOKF,'change':0},
+								success:function(res){
+									var games = res.data.games
+									console.log(games)
+									for(var i = 0;i < games.length;i++){
+										if(games[i].trialDays == 0){
+											$('.ejectGetGame .titlePic .gameName').text(games[i].chinaName || games[i].englishName)
+											$('.ejectGetGame .gameDetail .priceLabel span').text('￥' + games[i].worth)
+											$('.ejectGetGame .gameDetail .gameImg').attr('src',games[i].libraryCapsule)
+											getGameList.appIds = games[i].appId
+											console.log(games[i].appId)
+										}
+									}
+								}
+							})
+							$('.ejectBox').removeClass('unactive')
+						}else{
+							alert('您已参与过活动')
+						}
+					}
+				})
+			}
+			
+			// 获取活动页商品数据
+			function getFreeGame(){
+				$.ajax({
+					url:onekeyfunDomin + '/people/activity/brief',
+					data:{'OKF_TOKEN':localInfo.userOKF},
+					success:function(res){
+						console.log(res)
+						var gameData = res.data
+						for(var i = 0;i < gameData.length;i++){
+							$(`<div class="swiper-slide">
+								<div class="slideGame">
+									<div class="slideName ft12">${gameData[i].chinaName}</div>
+									<div class="slideGamePic">
+										<div class="slidePrice">
+											<div class="price"><span class='money'>￥</span>${gameData[i].worth}</div>
+										</div>
+										<img class="PicImg" src="${gameData[i].image}" alt="">
+									</div>
+								</div>
+							</div>`).appendTo('.swiper-wrapper')
+							$(`<div class="gameItem">
+								<img class="gameImg" src="${gameData[i].image}">
+								<div class="gameName">${gameData[i].chinaName}</div>
+								<div class="gamePirce ft16 ft_weight">
+									<span class="ft12">￥</span>${gameData[i].worth}
+								</div>
+							</div>`).appendTo('.gameItemBox')
+						}
+					}
+				})
+			}
+			
+			getFreeGame()
+		})
+	</script>
+</html>

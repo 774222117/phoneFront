@@ -1,0 +1,18 @@
+.successful {width: 0.7rem;height: 1.08rem;margin: 0.54rem 0 0 1.53rem;}
+.successful .pic {width: 0.7rem;height: 0.7rem;background: url(../images/paySuccess/successFul.png)no-repeat;background-size: cover;}
+.successful .text1 {width: 0.72rem;line-height: 0.25rem;text-align: center;margin-top: 0.13rem;}
+
+.buyGameBox {width: 3.47rem;height: 1.96rem;background: linear-gradient(135deg,#256484, #10344d);
+box-shadow: 0px 4px 8px 0px rgba(4,26,40,0.59);margin: 0.53rem 0 0 0.16rem;border-bottom: 1px solid #41d7ff;
+display: flex;flex-direction: column;}
+.buyGameBox .gamePic {width: 1.46rem;height: 0.55rem;background-color: red;margin: 0.24rem 0 0 1.02rem;position: relative;}
+.buyGameBox .gamePic img{width: 100%;height: 100%;position: absolute;}
+.buyGameBox .gamePic .playing {width: 0.54rem;height: 0.2rem;position: absolute;right: 0;background: url(../images/paySuccess/playing.png)no-repeat;background-size: cover;}
+.buyGameBox .gameName {width: 1.5rem;height: 0.19rem;margin: 0.08rem 0 0 1.02rem;}
+.buyGameBox .watchGameBtn {width: 1.95rem;line-height: 0.48rem;border: 1px solid #1ebff3;margin: 0.18rem 0 0 0.8rem;color: #6ec7ff;text-align: center;cursor: pointer;}
+
+.orderInfo {width: 1.48rem;height: 0.19rem;margin: 0.16rem 0 0 1.09rem;display: flex;align-items: center;}
+.orderInfo .logo{width: 0.16rem;height: 0.16rem;background: url(../images/myOrder/question.png)no-repeat;background-size: cover;}
+.orderInfo .text2{width: 1.26rem;height: 0.19rem;margin-left: 0.06rem;}
+
+.customerService {width: 106px;height: 105px;background: url(../images/detail/7moor.png)no-repeat;position: fixed;right: -10%;bottom: -5%;z-index: 99;background-size: cover;}

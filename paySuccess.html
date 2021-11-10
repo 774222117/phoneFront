@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>   
+		<meta name="description" content="W4PLAY,天天都玩好游戏，折扣游戏，电脑游戏">
+		<meta name="keywords" content="W4PLAY,天天都玩好游戏">
+		<meta name="generator" content="w4play">
+		<meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+		<meta name="screen-orientation" content="portrait"><!--uc强制竖屏-->
+		<meta name="x5-orientation" content="portrait"><!--QQ强制竖屏-->
+		<meta name="full-screen" content="yes"><!--UC强制全屏-->
+		<meta name="x5-fullscreen" content="true"> <!--QQ强制全屏-->
+		<meta name="browsermode" content="application"><!--UC应用模式-->
+		<meta name="x5-page-mode" content="app"><!--QQ应用模式-->
+		<title>W4PLAY-天天都玩好游戏</title>
+		<link rel="stylesheet" type="text/css" href="./css/public.css"/>
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./css/paySuccess.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/swiper.css"/>
+		<style type="text/css">
+		</style>
+	</head>
+	<body style="overflow-x:hidden;">
+		<div id="app">
+			<div style="display: flex;flex-direction: column;">
+				<div class="successful">
+					<div class="pic"></div>
+					<div class="text1 ft18 color_price">支付成功</div>
+				</div>
+				<div class="buyGameBox">
+					<div class="gamePic">
+						<img src="./images/index/game.png" alt="">
+						<div class="playing"></div>
+					</div>
+					<div class="gameName ft14 ft_weight color_text1">四海兄弟2最终版最终版</div>
+					<div class="watchGameBtn ft16 ft_weight">查看游戏</div>
+				</div>
+				<div class="orderInfo">
+					<div class="logo"></div>
+					<div class="text2 ft14 color_text1_08">订单问题，联系客服</div>
+				</div>
+			</div>
+			<!-- 联系客户按钮 -->
+			<div class="customerService" onclick="url()">	
+		</div>
+		<script>
+		 (function (w, d, n, a, j) {
+		  w[n] = w[n] || function () {
+		   (w[n].a = w[n].a || []).push(arguments);
+		  };
+		  j = d.createElement('script');
+		  j.async = true;
+		  j.src ='https://qiyukf.com/script/034c03bd656678dc8584dcdf671baed4.js';
+		  d.body.appendChild(j);
+		 })(window, document, 'ysf');
+		</script>
+	</body>
+	<script type="text/javascript" src="./js/domin.js"></script>
+	<script type="text/javascript" src="./js/zepto.min.js"></script>
+	<script type="text/javascript" src="./js/public.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// 当前的渠道ID
+			var channel = valueByName(location.href,'channel');
+			
+			$('.watchGameBtn ').click(function(){
+				window.location.href = 'myOrder.html?channel=' + channel
+			})
+		})
+	</script>
+</html>

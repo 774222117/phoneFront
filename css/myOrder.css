@@ -1,0 +1,59 @@
+/* 顶部 */
+.topbar{width: 100%;height: 0.66rem;background-color: #051824;display: flex;align-items: center;}
+.topbar .topbarItem{width: 3.75rem;height: 0.36rem;display: flex;align-items: center;}
+.topbar .topbarItem .w4play{width: 1.04rem;height: 0.25rem;margin-left: 0.16rem;background: url(../images/index/w4playlogo.png)no-repeat;background-size: cover;}
+.topbar .topbarItem .serach{width: 1.36rem;height: 0.36rem;margin-left: 0.6rem;background-color: #0b273a;border-radius: 33px;display: flex;align-items: center;}
+.topbar .topbarItem .serach .serachbox{width: 0.9rem;height: 0.21rem;margin-left: 0.12rem;background-color: #0b273a;color: #FFFFFF;}
+.topbar .topbarItem .serach .serachlogo{width: 0.24rem;height: 0.24rem;background: url(../images/index/iconSearch.png)no-repeat;background-size: cover;}
+.topbar .topbarItem .userIcon{width: 0.36rem;height: 0.36rem;background-color: white;margin-left: 0.08rem;border-radius: 50%;}
+.topbar .topbarItem .userIcon img{width: 100%;height: 100%;}
+
+.balance {width: 3.47rem;height: 0.78rem;margin: 0.12rem 0 0 0.14rem;display: flex;justify-content: space-between;}
+.balance .W4balance {width: 1.65rem;height: 0.78rem;background: url(../images/myOrder/w4balance.png)no-repeat;background-size: cover;}
+.balance .W4balance .text {width: 1rem;height: 0.19rem;margin: 0.07rem 0 0 0.17rem;font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+color: #ffffff;line-height: 0.19rem;}
+.balance .W4balance .W4number {margin: 0.07rem 0 0 0.17rem;}
+.balance .W4PB {width: 1.65rem;height: 0.78rem;background: url(../images/myOrder/pbalance.png)no-repeat;background-size: cover;}
+.balance .W4PB .text {width: 1rem;height: 0.19rem;font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+color: #ffffff;margin: 0.07rem 0 0 0.17rem;}
+.balance .W4PB .PBnumber {margin: 0.07rem 0 0 0.17rem;}
+
+.allOrder {width: 3.43rem;height: 100%;margin: 0.14rem 0 0 0.16rem;}
+.allOrder .orderTitleBox {width: 3.43rem;height: 0.5rem;display: flex;background-color: #08192b;}
+.allOrder .orderTitle {width: 3.43rem;height: 0.36rem;margin-top: 0.14rem;background: linear-gradient(rgba(32,98,131,0.0), rgba(15,44,81,0.4));display: flex;}
+.allOrder .orderTitle .text{color: #5dd0ff;margin-left: 0.12rem;}
+.allOrder .orderTitle .question{width: 0.16rem;height: 0.16rem;margin-left: 1.47rem;margin-top: 0.02rem;background: url(../images/myOrder/question.png)no-repeat;background-size: cover;}
+.allOrder .orderTitle .text1{color: rgba(255,255,255,0.85);font-weight: 400;margin-left: 0.09rem;}
+
+.bigBox {width: 100%;height: 100%;}
+
+.orderInfoBox {width: 3.43rem;height: 100%;display: flex;position: relative;}
+.orderInfoBox .orderInfo {width: 3.43rem;height: 2.1rem;margin-top: 0.14rem;background: url(../images/myOrder/orderBackPic.png)no-repeat;background-size: cover;}
+.orderInfoBox .orderInfo .gameInfoBox {width: 3.19rem;height: 0.76rem;margin-left:0.12rem;border-bottom: 1px solid rgba(255,255,255,0.2);display: flex;}
+.orderInfoBox .orderInfo .gameInfoBox .gameInfo {width: 3.19rem;height: 0.5rem;margin-top: 0.12rem;display: flex;align-items: center;}
+.orderInfoBox .orderInfo .gameInfoBox .gameInfo .gamePic {width: 1.04rem;height: 0.5rem;position: relative;}
+.orderInfoBox .orderInfo .gameInfoBox .gameInfo .gamePic img{width: 100%;height: 100%;position: absolute;}
+.orderInfoBox .orderInfo .gameInfoBox .gameInfo .gameNamePrice {width: 1.3rem;height: 0.51rem;margin-left: 0.08rem;}
+.orderInfoBox .orderInfo .gameInfoBox .gameInfo .gameName {width: 1.3rem;height: 0.21rem;line-height: 0.21rem;color: rgba(216,240,255,0.85);overflow: hidden;
+text-overflow:ellipsis;white-space: nowrap;}
+.orderInfoBox .orderInfo .gameInfoBox .gameInfo .orderQuestion {width: 0.82rem;line-height: 0.31rem;border-radius: 22px;border: 1px solid #5DD0FF;text-align: center;}
+.orderInfoBox .orderInfo .gameInfoBox .gameInfo .gamePrice {width: 1rem;height: 0.24rem;margin-top: 0.06rem;line-height: 0.24rem;}
+.orderInfoBox .orderInfo .payInfo {width: 3.19rem;height: 1.1rem;margin-left: 0.12rem;display: flex;flex-direction: column;}
+.orderInfoBox .orderInfo .payInfo .number{min-width: 2.90rem;line-height: 0.22rem;margin-top: 0.14rem;color: rgba(216,240,255,0.65);}
+.orderInfoBox .orderInfo .payInfo .payTime{width: 3rem;height: 0.22rem;margin-top: 0.12rem;color: rgba(216,240,255,0.65);}
+.orderInfoBox .orderInfo .payInfo .orderState{width: 3.2rem;height: 0.35rem;margin-top: 0.12rem;display: flex;align-items: center;}
+.orderInfoBox .orderInfo .payInfo .orderState .orderStateInfo{width: 2.42rem;height: 0.22rem;color: rgba(216,240,255,0.65);}
+.orderInfoBox .orderInfo .gradual {width: 3.43rem;height: 0.36rem;background: linear-gradient(rgba(32,98,131,0.0), rgba(15,44,81,0.4));position: absolute;bottom: 0;}
+
+.container1 {width: 100%;height: 300%;background: rgba(6,26,40,0.47);position: absolute;z-index: 5;top: 0;left: 0;}
+.container1 .orderProblem {width: 3.15rem;height: 2.32rem;background: #0b273a;position: fixed;top: 2.11rem;left: 0.3rem;display: flex;flex-direction: column;border-radius: 12px;}
+.container1 .orderProblem .close {width: 0.3rem;height: 0.29rem;margin: 0.08rem 0 0 2.77rem;background: url(../images/myOrder/close.png)no-repeat;cursor: pointer;background-size: cover;}
+.container1 .orderProblem .content {width: 2.55rem;height: 0.72rem;margin: 0.04rem 0 0 0.3rem;color: #e3f7ff;}
+.container1 .orderProblem .installBtn {width: 1.81rem;line-height: 0.46rem;background: linear-gradient(135deg,#47d5ff, #00b5ff 36%, #0082de);margin: 0.43rem 0 0 0.67rem;
+text-shadow: 0px 2px 4px 0px #0e7499;text-align: center;cursor: pointer;}
+
+.bigBox2 {background-color: #0b273a;}
+.bigBox2 .noOrder {position: relative;left: 1.4rem;}
+.bigBox2 .noOrder .svgText {position: absolute;left: -0.2rem;color: rgba(227, 247, 255, 0.12);font-family: PingFang SC;}
+
+.customerService {width: 106px;height: 105px;background: url(../images/detail/7moor.png)no-repeat;position: fixed;right: -10%;bottom: -5%;z-index: 99;}

@@ -1,0 +1,346 @@
+/* 顶部 */
+.topbar{width: 100%;height: 0.66rem;background-color: #051824;display: flex;align-items: center;}
+.topbar .topbarItem{width: 3.75rem;height: 0.36rem;display: flex;align-items: center;}
+.topbar .topbarItem .w4play{width: 1.04rem;height: 0.25rem;margin-left: 0.16rem;background: url(../images/index/w4playlogo.png)no-repeat;background-size: cover;}
+.topbar .topbarItem .serach{width: 1.36rem;height: 0.36rem;margin-left: 0.6rem;background-color: #0b273a;border-radius: 33px;display: flex;align-items: center;}
+.topbar .topbarItem .serach .serachbox{width: 0.9rem;height: 0.21rem;margin-left: 0.12rem;background-color: #0b273a;color: #FFFFFF;}
+.topbar .topbarItem .serach .serachlogo{width: 0.24rem;height: 0.24rem;background: url(../images/index/iconSearch.png)no-repeat;background-size: cover;}
+.topbar .topbarItem .userIcon{width: 0.36rem;height: 0.36rem;margin-left: 0.08rem;border-radius: 50%;position: relative;}
+.topbar .topbarItem .userIcon img {width: 100%;height: 100%;position: absolute;}
+.unlogin {background-color: black;}
+
+.gamephotoBox {width: calc(100% - 0.14rem);height: 1.88rem;margin: 0.14rem 0 0 0.14rem;display: flex;}
+.gamephotoBox .gamephoto1{width: 3.36rem;height: 1.88rem;position: relative;}
+.gamephotoBox .gamephoto1 video{width: 100%;height: 100%;display: inline-block;position: absolute;}
+.gamephotoBox .gamephoto1 .video-Pic{
+	width: 3.36rem;
+	height: 1.88rem;
+	position: absolute;
+	z-index: 998;
+	background-size: cover;
+}
+.gamephotoBox .gamephoto1 .video-Pic img {width: 100%;height: 100%;position: absolute;opacity: 0.4;}
+.gamephotoBox .gamephoto1 .video-img{
+	position: absolute;
+    top: 38%;
+    left: 43%;
+    width: 50px;
+	height: 48px;
+    z-index: 999;
+    background: url(../images/detail/blueBorder.png) no-repeat;
+    background-size: cover;
+	cursor:pointer}
+.gamephotoBox .gamephoto2{width: 3.36rem;height: 1.88rem;margin-left: 0.08rem;position: relative;}
+.gamephotoBox .gamephoto2 img{width: 100%;height: 100%;position: absolute;}
+
+.introduce{width: 3.61rem;margin: 0.22rem 0 0 0.14rem;}
+.introduce .gameNameBox{width: 3.61rem;height: 0.42rem;display: flex;justify-content: space-between;}
+.introduce .gameName{min-width: 1.86rem;height: 0.42rem;}
+.introduce .gameName .chinese{min-width: 1.86rem;height: 0.21rem;}
+.introduce .gameName .english{width: 1.86rem;height: 0.19rem;color: rgba(255,255,255,0.6);font-family: Microsoft YaHei;}
+.introduce .yesterdayPlay{width: 1.14rem;height: 0.38rem;position: relative;}
+.introduce .yesterdayPlay img{width: 100%;height: 100%;position: absolute;}
+.introduce .yesterdayPlay .playing{min-width: 0.98rem;height: 0.17rem;position: absolute;left: 0.1rem;top: 4px;}
+
+.introduce .promise {width: 1.82rem;height: 0.2rem;margin-top: 0.14rem;display: flex;justify-content: space-between;color: rgba(255,255,255,0.4);}
+.introduce .promise div:nth-child(1){min-width: 0.56rem;line-height: 0.2rem;background-color: rgba(0,0,0,0.40);text-align: center;padding-right: 0.02rem;border-radius: 0.02rem;}
+.introduce .promise div:nth-child(2){min-width: 0.56rem;line-height: 0.2rem;background-color: rgba(0,0,0,0.40);text-align: center;border-radius: 0.02rem;}
+.introduce .promise div:nth-child(3){min-width: 0.54rem;line-height: 0.2rem;background-color: rgba(0,0,0,0.40);text-align: center;border-radius: 0.02rem;}
+
+.introduce .buyGameBox {width: 3.47rem;height: 0.67rem;margin-top: 0.16rem;display: flex;cursor: pointer;background: url(../images/detail/buyBtn.png)no-repeat;background-size: cover;}
+.introduce .buyGameBox .priceBox {width: 0.96rem;height: 0.55rem;margin: 0.04rem 0 0 0.18rem;}
+.introduce .buyGameBox .priceBox .edtion{min-width: 0.56rem;line-height: 0.22rem;}
+.introduce .buyGameBox .priceBox .priceBox1{width: 0.96rem;height: 0.33rem;display: flex;align-items: center;}
+.introduce .buyGameBox .priceBox .priceBox1 .newPrice{width: 0.56rem;height:0.33rem;line-height: 0.33rem;font-weight: 700;font-family: DINPro;display: flex;}
+.introduce .buyGameBox .priceBox .priceBox1 .newPrice .newPriceItem{font-family: DINPro;font-size: 0.18rem;line-height: 0.3rem;}
+.introduce .buyGameBox .priceBox .priceBox1 .oldPrice{width: 0.32rem;line-height: 0.21rem;margin-left: 0.08rem;text-decoration: line-through;}
+
+.introduce .explainBox {width: 3.47rem;height: 0.44rem;background-color: #051824;margin-top: 0.12rem;display: flex;}
+.introduce .explainBox .explain{min-width: 3.25rem;height: 0.24rem;margin: 0.09rem 0 0 0.07rem;display: flex;align-items: center;}
+.introduce .explainBox .explain .questionMask{width: 0.24rem;height: 0.24rem;background: url(../images/detail/questionMask.png)no-repeat;background-size: cover;}
+.introduce .explainBox .explain .text{width: 1.46rem;height: 0.22rem;margin-left: 0.04rem;color: rgba(216,240,255,0.85);}
+.introduce .explainBox .explain .right{width: 0.24rem;height: 0.24rem;margin-left: 1.27rem;background: url(../images/detail/right.png)no-repeat;}
+
+.introduce .explainBoxTwo {width: 3.47rem;height: 0.44rem;background-color: #051824;margin-top: 0.12rem;display: flex;}
+.introduce .explainBoxTwo .explain{min-width: 3.25rem;height: 0.24rem;margin: 0.09rem 0 0 0.07rem;display: flex;align-items: center;}
+.introduce .explainBoxTwo .explain .questionMask{width: 0.24rem;height: 0.24rem;background: url(../images/detail/questionMask.png)no-repeat;background-size: cover;}
+.introduce .explainBoxTwo .explain .text{width: 1.46rem;height: 0.22rem;margin-left: 0.04rem;color: rgba(216,240,255,0.85);}
+.introduce .explainBoxTwo .explain .right{width: 0.24rem;height: 0.24rem;margin-left: 1.27rem;background: url(../images/detail/right.png)no-repeat;}
+
+
+.detailBox {width: 3.47rem;background-color: #051824;margin: 0.14rem 0 0 0.14rem;}
+.detailBox .titleChange{width: 3.47rem;height: 0.45rem;border-bottom: 0.5px rgba(255,255,255,0.4) solid;display: flex;}
+.detailBox .titleChange .titleBox{width: 1.83rem;height: 0.32rem;margin: 0.11rem 0 0 0.77rem;display: flex;}
+.detailBox .titleChange .titleBox .gameDetail{width: 0.64rem;height: 0.32rem;}
+.detailBox .titleChange .titleBox .gameDetail .text1{min-width: 0.66rem;height: 0.22rem;}
+.detailBox .titleChange .titleBox .gameDetail .bottomLine{width: 0.64rem;height: 0.02rem;}
+.detailBox .titleChange .titleBox .comment{width: 0.87rem;height: 0.32rem;margin-left: 0.32rem;}
+.detailBox .titleChange .titleBox .comment .text2{width: 0.87rem;height: 0.2rem;text-align: center;}
+.detailBox .titleChange .titleBox .comment .bottomLine{width: 0.64rem;height: 0.02rem;}
+.ischange1{margin-top: 0.08rem;background: url(../images/detail/bottomLine.png)no-repeat;background-size: cover;}
+.ischange2{margin-top: 0.08rem;background: url(../images/detail/bottomLine.png)no-repeat;margin-left: 0.1rem;background-size: cover;}
+
+.detailBox .gameIntrod {width: 3.47rem;height: 100%;display: flex;flex-direction: column;}
+.detailBox .gameIntrod .text1{min-width: 0.66rem;height: 0.22rem;margin: 0.2rem 0 0 0.12rem;color: #d8f0ff;}
+.detailBox .gameIntrod .text2{width: 3.17rem;height: 2rem;margin: 0.04rem 0 0 0.12rem;color: rgba(216,240,255,0.9);position: relative;}
+.detailBox .gameIntrod .text2 img{max-width: 100%;}
+.detailBox .gameIntrod .watchAll {margin: 0.04rem 0 0 0.12rem;}
+.detailBox .gameIntrod .text2 li img{display: none;}
+/* .detailBox .gameIntrod .text2 li br{margin-top: 0.5rem;} */
+.detailBox .gameIntrod .gradual{width: 3.47rem;height: 0.36rem;background: linear-gradient(rgba(32,98,131,0.0), rgba(15,44,81,0.4));position: absolute;bottom: 2rem;}
+
+.detailBox .language {width: 3.47rem;height: 0.96rem;display: flex;flex-direction: column;border-bottom: 1px rgba(56,141,177,0.40) solid;}
+.detailBox .language .text1{width: 0.64rem;height: 0.22rem;margin: 0.2rem 0 0 0.14rem;color: #d8f0ff;}
+.detailBox .language .languageType{width: 3.12rem;height: 0.28rem;margin: 0.06rem 0 0 0.14rem;background: linear-gradient(135deg,#1b77a5, #0f3651);border-bottom: 1px #2e6890 solid;border-right: 1px #2e6890 solid;}
+.detailBox .language .languageType .text2{margin-left: 0.16rem;line-height: 0.28rem;color: #d8f0ff;}
+.detailBox .language .gradual {width: 3.47rem;height: 0.36rem;background: linear-gradient(rgba(32,98,131,0.0), rgba(15,44,81,0.4));position: absolute;bottom: -1.72rem;}
+
+.detailBox .configure {width: 3.47rem;height: 2.84rem;display: flex;flex-direction: column;}
+.detailBox .configure .text{width: 0.64rem;height: 0.22rem;margin: 0.2rem 0 0 0.14rem;}
+.detailBox .configure .configureBox{width: 3.08rem;height: 1.91rem;margin: 0.08rem 0 0 0.14rem;display: flex;flex-direction: column;}
+.detailBox .configure .configureBox .cpu{width: 3.08rem;height: 0.38rem;display: flex;justify-content: space-between;}
+.detailBox .configure .configureBox .cpu .text1{min-width: 0.42rem;height: 0.2rem;}
+.detailBox .configure .configureBox .cpu .text2{width: 2.33rem;height: 0.38rem;color: rgba(216,240,255,0.8);}
+.detailBox .configure .configureBox .ram{width: 3.08rem;height: 0.19rem;margin-top: 0.16rem;display: flex;justify-content: space-between;}
+.detailBox .configure .configureBox .ram .text1 {width: 0.42rem;height: 0.2rem;}
+.detailBox .configure .configureBox .ram .text2 {width: 2.33rem;height: 0.19rem;color: rgba(216,240,255,0.8);}
+.detailBox .configure .configureBox .gtx{width: 3.08rem;height: 0.38rem;margin-top: 0.09rem;display: flex;justify-content: space-between;}
+.detailBox .configure .configureBox .gtx .text1 {width: 0.42rem;height: 0.2rem;}
+.detailBox .configure .configureBox .gtx .text2 {width: 2.33rem;height: 0.38rem;color: rgba(216,240,255,0.8);}
+.detailBox .configure .configureBox .disk{width: 3.08rem;height: 0.19rem;margin-top: 0.16rem;display: flex;justify-content: space-between;}
+.detailBox .configure .configureBox .disk .text1 {width: 0.42rem;height: 0.2rem;}
+.detailBox .configure .configureBox .disk .text2 {width: 2.33rem;height: 0.19rem;color: rgba(216,240,255,0.8);}
+.detailBox .configure .configureBox .system{width: 3.08rem;height: 0.19rem;margin-top: 0.17rem;display: flex;justify-content: space-between;}
+.detailBox .configure .configureBox .system .text1 {width: 0.42rem;height: 0.2rem;}
+.detailBox .configure .configureBox .system .text2 {width: 2.33rem;height: 0.19rem;color: rgba(216,240,255,0.8);}
+/* 评价 */
+
+.evaluate {width: 100%;height: 100%;display: flex;flex-direction: column;background-color: #051824;}
+.evaluate .text1 {width: 1rem;line-height: 0.22rem;margin: 0.14rem 0 0 0.14rem;font-family: PingFang SC;}
+.evaluate .evaluateBox {width: 100%;height: 100%;margin: 0.12rem 0 0 0.14rem;display: flex;flex-direction: column;}
+.evaluate .evaluateItem {width: 3.09rem;height: 2.28rem;border-bottom: 1px rgba(56,141,177,0.70) solid;}
+.evaluate .evaluateItem .userInfo {width: 3.09rem;height: 0.32rem;margin-top: 0.12rem;display: flex;align-items: center;justify-content: space-between;}
+.evaluate .evaluateItem .userInfo .head {width: 0.32rem;height: 0.32rem;border-radius: 50%;position: relative;}
+.evaluate .evaluateItem .userInfo .head img{width: 100%;height: 100%;position: absolute;}
+.evaluate .evaluateItem .userInfo .info {width: 0.51rem;height: 0.35rem;}
+.evaluate .evaluateItem .userInfo .info .name{min-width: 1.8rem;height: 0.18rem;font-family: Hiragino Sans GB;}
+.evaluate .evaluateItem .userInfo .info .gameTime{min-width: 1.3rem;height: 0.17rem;}
+.evaluate .evaluateItem .userInfo .good {width: 0.9rem;height: 0.28rem;background: linear-gradient(135deg,#1a4f6c, rgba(11,39,58,0.00));margin-left: 0.98rem;display: flex;align-items: center;}
+.evaluate .evaluateItem .userInfo .good .text2{width: 0.38rem;height: 0.24rem;margin-left: 0.16rem;text-align: center;}
+.evaluate .evaluateItem .userInfo .good .pic{width: 0.18rem;height: 0.18rem;margin-left: 2px;background: url(../images/detail/good.png)no-repeat;background-size: cover;}
+.evaluate .evaluateItem .evaluateText {min-width: 3.11rem;height: 1.1rem;margin-top: 0.08rem;}
+.evaluate .evaluateItem .evaluateTime {width: 3.09rem;height: 0.16rem;display: flex;align-items: center;margin-top: 0.1rem;}
+.evaluate .evaluateItem .evaluateTime .time{min-width: 1.5rem;height: 0.16rem;}
+.evaluate .evaluateItem .evaluateTime .peopleNum{min-width: 1.26rem;height: 0.16rem;margin-left: 0.6rem;}
+.evaluate .watchMore {width: 3.12rem;height: 0.72rem;margin-top: 0.16rem;}
+.evaluate .watchMoreBtn {width: 3.12rem;line-height: 0.48rem;border: 1px solid #1ebff3;color: #6ec7ff;text-align: center;cursor: pointer;}
+
+.box2{width: 100%;height: 100%;}
+.box2 .evaluate {width: 3.47rem;height: 100%;margin: 0.14rem 0 0 0rem;display: flex;flex-direction: column;background-color: #051824;}
+.box2 .evaluate .text1 {width: 1rem;line-height: 0.22rem;margin: 0.14rem 0 0 0.14rem;}
+.box2 .evaluate .evaluateBox {width: 3.09rem;height: 100%;margin: 0.12rem 0 0 0.14rem;display: flex;flex-direction: column;}
+.box2 .evaluate .evaluateItem {width: 3.09rem;height: 2.28rem;border-bottom: 1px rgba(56,141,177,0.70) solid;}
+
+/* 登陆 */
+.container2 {width: 100%;height: 300%;background: rgba(6,26,40,0.47);position: absolute;z-index: 5;top: 0;left: 0;}
+.container2 .loginBox {width: 3.15rem;height: 3.55rem;background-color: #0d2d42;position: fixed;top: 1.8rem;left: 0.3rem;display: flex;flex-direction: column;border: 1px solid rgba(227,163,255,0.24);border-radius: 10px;}
+.loginBox .loginTitle {width: 2.82rem;height: 0.71rem;margin: 0.18rem 0 0 0.18rem;background: url(../images/public/bannerTitle.png)no-repeat;background-size: cover;}
+.loginBox .titleLight {width: 2.33rem;height: 1.84rem;position: absolute;left: 0.98rem;top: -0.98rem;background: url(../images/public/bannerPic.png)no-repeat;background-size: cover;}
+.container2 .loginBox .number1 {width: 0.6rem;height: 0.2rem;color: rgba(235,235,245,0.65);margin: 0.15rem 0 0 0.18rem;}
+.container2 .loginBox .number2 {width: 2.72rem;height: 0.36rem;background-color: rgba(5,24,36,0.8);margin: 0.04rem 0 0 0.18rem;display: flex;align-items: center;}
+.container2 .loginBox .number2 input{width: 1.7rem;height: 0.2rem;padding-left: 0.08rem;background-color: rgba(5,24,36,0.6);}
+.container2 .loginBox .message1 {width: 0.8rem;height: 0.2rem;color: rgba(235,235,245,0.65);margin: 0.12rem 0 0 0.18rem;}
+.container2 .loginBox .message2 {width: 2.72rem;height: 0.36rem;background-color: rgba(5,24,36,0.8);margin: 0.04rem 0 0 0.18rem;display: flex;align-items: center;}
+.container2 .loginBox .message2 input{width: 1.5rem;height: 0.2rem;padding-left: 0.08rem;background-color: rgba(5,24,36,0.6);}
+.container2 .loginBox .message2 .code{min-width: 1rem;height: 0.2rem;color: #5cd0ff;cursor: pointer;text-align: left;text-align: right;margin-left: 0.08rem;}
+.container2 .loginBox .agreement {width: 1.8rem;height: 0.2rem;margin: 0.10rem 0 0 0.15rem;display: flex;}
+.container2 .loginBox .agreement .agree1{width: 0.68rem;height: 0.2rem;text-align: center;color: rgba(216,240,255,0.65);}
+.container2 .loginBox .agreement .agree2{width: 1rem;height: 0.2rem;text-align: center;color: rgba(216,240,255,0.85);}
+.container2 .loginBox .loginBtn {width: 1.87rem;height: 0.45rem;line-height: 0.45rem;background: url(../images/public/loginBtn.png)no-repeat;background-size: cover;
+margin: 0.2rem 0 0 0.62rem;cursor: pointer;}
+/* 登陆框关闭按钮 */
+.loginBox .close {
+	width: 0.28rem;
+	height: 0.28rem;
+	background: url(../images/public/closeBtn.png)no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 3;
+	bottom: -0.7rem;
+	left: 1.4rem;
+}
+
+.introdGame {width: 100%;height: 300%;background: rgba(6,26,40,0.65);position: absolute;z-index: 2;top: 0;left: 0;}
+.introdGame .introdBox {width: 3.75rem;height: 4.5rem;background-color: #061a28;position: fixed;bottom: -4.5rem;border-top-right-radius: 0.26rem;
+border-top-left-radius: 0.26rem;display: flex;flex-direction: column;}
+.introdGame .introdBox .close{width: 0.25rem;height: 0.25rem;background: url(../images/detail/close.png)no-repeat;margin: 0.14rem 0 0 3.35rem;cursor: pointer;background-size: cover;}
+.introdGame .introdBox .picBox {width: 2.79rem;height: 2.89rem;margin-left: 0.47rem;display: flex;flex-direction: column;}
+.introdGame .introdBox .picBox .pic {width: 2.79rem;height: 2.41rem;position: relative;}
+.introdGame .introdBox .picBox .pic img{width: 100%;height: 100%;position: absolute;}
+.introdGame .introdBox .picBox .text1 {width: 2.04rem;height: 0.25rem;text-align: center;margin: 0.13rem 0 0 0.37rem;}
+.introdGame .introdBox .whiteLine{width: 1.34rem;height: 0.05rem;background-color: #FFFFFF;position: absolute;bottom: 0.08rem;left: 1.2rem;}
+
+
+
+.buyContent {width: 100%;height: 300%;background: rgba(6,26,40,0.65);position: absolute;z-index: 5;top: 0;left: 0;}
+.buyContent .buyBox .countDown {width: 3.75rem;height: 0.37rem;border-top-left-radius: 0.26rem;border-top-right-radius: 0.26rem;display: none;background: url(../images/detail/buyBoxTop.png)no-repeat;background-size: cover;
+align-items: center;justify-content: center;}
+.countDown .text {width: 1.60rem;height: 0.19rem;}
+.countDown .timeBox{width: 0.7rem;height: 0.19rem;display: flex;padding-right: 0.2rem;margin-top: 0.01rem;line-height: 0.18rem;}
+.buyContent .buyBox {width: 3.75rem;height: 4.5rem;background-color: #0d2d42;position: fixed;bottom: 0;display: flex;flex-direction: column;border-top-left-radius: 0.26rem;border-top-right-radius: 0.26rem;}
+.buyContent .buyBox .close{width: 0.25rem;height: 0.25rem;background: url(../images/detail/close.png)no-repeat;margin: 0.14rem 0 0 3.35rem;background-size: cover;}
+.buyContent .buyBox .gameInfo {width: 2.58rem;height: 0.55rem;margin-left: 0.32rem;display: flex;}
+.buyContent .buyBox .gameInfo .pic{width: 1.46rem;height: 0.55rem;position: relative;}
+.buyContent .buyBox .gameInfo .pic img{width: 100%;height: 100%;position: absolute;}
+.buyContent .buyBox .gameInfo .name{width: 1.04rem;height: 0.52rem;margin-left: 0.08rem;}
+.buyContent .buyBox .gameInfo .name .gameName{width: 1.48rem;line-height: 0.19rem;}
+.buyContent .buyBox .gameInfo .name .price{width: 1.04rem;height: 0.23rem;margin-top: 0.09rem;display: flex;align-items: center;}
+.buyContent .buyBox .gameInfo .name .price .newPrice{width: 0.37rem;height: 0.23rem;}
+.buyContent .buyBox .gameInfo .name .price .text2{width: 0.56rem;line-height: 0.2rem;background-color: #e89d00;margin-left: 0.11rem;border-radius: 2px;text-align: center;margin-bottom: 2px;}
+.buyContent .buyBox .payTypeBox {width: 3.11rem;height: 1.35rem;margin: 0.25rem 0 0 0.32rem;}
+.buyContent .buyBox .payTypeBox .type {width: 1.38rem;height: 0.22rem;}
+.buyContent .buyBox .payTypeBox .wechat {width: 3.11rem;height: 0.48rem;background-color: #061a28;margin-top: 0.49rem;display: flex;}
+.buyContent .buyBox .payTypeBox .wechat .wechatBox {width: 2.78em;height: 0.22rem;margin: 0.13rem 0 0 0.21rem;display: flex;align-items: center;}
+.buyContent .buyBox .payTypeBox .wechat .wechatBox .icon{width: 0.28rem;height: 0.22rem;background: url(../images/public/wechat.png)no-repeat;background-size: cover;}
+.buyContent .buyBox .payTypeBox .wechat .wechatBox .text3{width: 1.38rem;height: 0.19rem;margin-left: 0.19rem;}
+.buyContent .buyBox .payTypeBox .wechat .wechatBox .change{width: 0.2rem;height: 0.2rem;margin-left: 0.73rem;background: url(../images/public/ischange.png)no-repeat;background-size: cover;}
+.buyContent .buyBox .payTypeBox .alipay {width: 3.11rem;height: 0.48rem;background-color: #061a28;margin-top: 0.08rem;display: flex;}
+.buyContent .buyBox .payTypeBox .alipay .alipayBox {width: 2.78em;height: 0.25rem;margin: 0.12rem 0 0 0.22rem;display: flex;align-items: center;}
+.buyContent .buyBox .payTypeBox .alipay .alipayBox .icon{width: 0.28rem;height: 0.25rem;background: url(../images/public/alipay.png)no-repeat;background-size: cover;}
+.buyContent .buyBox .payTypeBox .alipay .alipayBox .text3{width: 1.38rem;height: 0.19rem;margin-left: 0.18rem;}
+.buyContent .buyBox .payTypeBox .alipay .alipayBox .change{width: 0.2rem;height: 0.2rem;margin-left: 0.73rem;background: url(../images/public/unchange.png)no-repeat;background-size: cover;}
+.buyContent .buyBox .buyButton {width: 3.04rem;line-height: 0.48rem;background: linear-gradient(135deg,#47d5ff, #00b5ff 36%, #0082de);margin: 0.43rem 0 0 0.36rem;text-shadow: 0px 2px 4px 0px #0e7499;text-align: center;letter-spacing: 1px;cursor: pointer;}
+
+.customerService {width: 1.06rem;height: 1.05rem;background: url(../images/detail/7moor.png)no-repeat;position: fixed;right: -10%;bottom: -5%;z-index: 10;}
+
+/* 弹出框 新用户专享 */
+.ejectBox {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.80);
+	position: fixed;
+	z-index: 51;
+	top: 0;
+	left: 0;
+}
+
+.ejectBox .ejectSmallBox {
+	width: 2.91rem;
+	height: 3.73rem;
+	position: absolute;
+	left: 0.33rem;
+	top: 1.09rem;
+}
+
+.ejectBox .lighting {
+	width: 2.2rem;
+	height: 1.12rem;
+	position: absolute;
+	left: 0.4rem;
+	background: url(../images/detail/lighting.png)no-repeat;
+	background-size: cover;
+}
+
+.ejectSmallBox .ejectGetGame {
+	width: 2.91rem;
+	height: 2.05rem;
+	background: url(../images/detail/detailSave.png)no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	position: absolute;
+	top: 0.8rem;
+}
+
+.ejectGetGame .timeBox {
+	width: 0.84rem;
+	height: 0.2rem;
+	position: absolute;
+	bottom: 0.08rem;
+	left: 1.12rem;
+	display: flex;
+	justify-content: space-between;
+}
+.timeBox .hour {
+	width: 0.2rem;
+	height: 0.2rem;
+	text-align: center;
+	margin-right: 0.02rem;
+}
+.timeBox .minute {
+	width: 0.2rem;
+	height: 0.2rem;
+	text-align: center;
+}
+.timeBox .second {
+	width: 0.2rem;
+	height: 0.2rem;
+	text-align: center;
+	margin-left: 0.02rem;
+	margin-left: 0.01rem;
+}
+
+/* 游戏详情 */
+.ejectGetGame .gameDetail {
+	width: 1.81rem;
+	height: 0.86rem;
+	margin: 0.45rem 0 0 0.57rem;
+	position: relative;
+}
+
+/* 游戏图 */
+.gameDetail .gameImg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.gameDetail .titlePic {
+	width: 1.81rem;
+	height: 0.22rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/freeGame/titlePic.png)no-repeat;
+	background-size: cover;
+	text-align: center;
+	line-height: 0.22rem;
+}
+
+.titlePic .gameName {
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	color: #ffffff;
+	opacity: 0.8;
+	letter-spacing: 0px;
+}
+
+.gameDetail .priceLabel {
+	width: 0.63rem;
+	height: 0.19rem;
+	background: url(../images/freeGame/priceLabel.png)no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: -0.05rem;
+	right: 0;
+	text-align: center;
+	line-height: 0.19rem;
+}
+
+.ejectSmallBox .ejectText {
+	width: 1.9rem;
+	height: 0.16rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	color: #cccccc;
+	margin: 0.15rem 0 0 0.54rem;
+	position: absolute;
+	bottom: 0.54rem;
+}
+.ejectSmallBox .ejectBtn {
+	width: 1.58rem;
+	height: 0.35rem;
+	margin: 0.2rem 0 0 0.6rem;
+	background: url(../images/detail/nowBuy.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+}

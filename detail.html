@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>   
+		<meta name="description" content="W4PLAY,天天都玩好游戏，折扣游戏，电脑游戏">
+		<meta name="keywords" content="W4PLAY,天天都玩好游戏">
+		<meta name="generator" content="w4play">
+		<meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+		<meta name="screen-orientation" content="portrait"><!--uc强制竖屏-->
+		<meta name="x5-orientation" content="portrait"><!--QQ强制竖屏-->
+		<meta name="full-screen" content="yes"><!--UC强制全屏-->
+		<meta name="x5-fullscreen" content="true"> <!--QQ强制全屏-->
+		<meta name="browsermode" content="application"><!--UC应用模式-->
+		<meta name="x5-page-mode" content="app"><!--QQ应用模式-->
+		<title>W4PLAY-天天都玩好游戏</title>
+		<link rel="stylesheet" type="text/css" href="./css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/detail.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/swiper.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/dropload.css"/>
+		<style type="text/css">
+			#app{
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+			}
+			
+			.gameBox {
+				flex: 1;
+				overflow-y: scroll;
+			}
+			
+			.evaluateHome {
+				width: calc(100% - 0.14rem);
+				flex: 1;
+				overflow-y: scroll;
+				display: flex;
+				flex-direction: column;
+				margin-left: 0.14rem;
+			}
+			
+			.evaluateHome ul li{
+				width: 100%;
+			}
+			
+			.unactive {display: none;}
+			
+			.swiper-container {
+				width: 100%;
+				height: 2.93rem;
+			} 
+	
+			.swiper-container .swiper-wrapper{
+				max-width: 100%;
+				
+			}
+			
+			.swiper-container .swiper-wrapper img{
+				width: 2.79rem;
+				height: 2.41rem;
+				
+			}
+			
+			.swiper-container .swiper-wrapper .swiper-slide{
+				/* margin-left: 0.48rem; */
+				width: 3.75rem;
+				height: 4.33rem;
+				
+			}
+			
+			.swiper-container .swiper-wrapper .swiper-slide img{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background-repeat: no-repeat;
+				background-size: 100%;
+			}
+			
+			.swiper-container .whiteLine {
+				position: absolute;
+				bottom: -20px;
+				z-index: 3;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<div class="gameBox">
+				<!-- 首页顶部 -->
+				<div class="topbar">
+					<div class="topbarItem">
+						<div class="w4play"></div>
+						<div class="serach">
+							<!-- 搜索框 -->
+							<input type="text" class="serachbox" placeholder="绝地求生" id="gameName">
+							<div class="serachlogo"></div>
+						</div>
+						<div class="userIcon unlogin">
+							<img src="images/public/loginState.png" alt="" style="display: none;">
+						</div>
+					</div>
+				</div>
+				<!-- 游戏图 -->
+				<div class="gamephotoBox">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<!-- <div class="swiper-slide">
+								<div class="gamephoto1">
+									<video src="https://media.st.dl.pinyuncloud.com/steam/apps/256814351/movie_max.mp4" autoplay></video>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="gamephoto2">
+									<img src="../images/index/game.png" alt="">
+								</div>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				<!-- 游戏介绍 -->
+				<div class="introduce">
+					<!-- 游戏名字 -->
+					<div class="gameNameBox">
+						<div class="gameName">
+							<div class="chinese ft16 ft_weight"></div>
+							<div class="english ft14"></div>
+						</div>
+						<div class="yesterdayPlay">
+							<img src="./images/detail/yesterdayPlay.png" alt="">
+							<div class="playing ft12">昨日 <span class="playersDay ft12 color_price"></span> 游玩</div>
+						</div>
+					</div>
+					<!-- 三证 -->
+					<div class="promise">
+						<div class="ft12">官方正版</div>
+						<div class="ft12">极速发货</div>
+						<div class="ft12">24H退货</div>
+					</div>
+					<!-- 购买 -->
+					<div class="buyGameBox">
+						<div class="priceBox">
+							<div class="edtion ft14 ft_weight">畅享版：</div>
+							<div class="priceBox1">
+								<div class="newPrice ft12 color_price">￥<div class="newPriceItem" style="font-size: 0.18rem;"></div></div>
+								<div class="oldPrice ft12 color_default">￥<span class="ft12"></span>123</div>
+							</div>
+						</div>
+					</div>
+					<!-- 什么是畅享版 -->
+					<div class="explainBox" style="position: relative;z-index: 2;">
+						<div class="explain">
+							<div class="questionMask"></div>
+							<div class="text ft14">什么是畅享版游戏？</div>
+							<div class="right"></div>
+						</div>
+					</div>
+					<!-- 购买后如何启动游戏 -->
+					<div class="explainBoxTwo" style="position: relative;z-index: 2;">
+						<div class="explain">
+							<div class="questionMask"></div>
+							<div class="text ft14">购买后如何启动游戏？</div>
+							<div class="right"></div>
+						</div>
+					</div>
+				</div>
+				<!-- 游戏详情和评论 -->
+				<div class="detailBox">
+					<!-- <div class="gameIntroduction"> -->
+					<!-- 顶部切换 -->
+					<div class="titleChange">
+						<div class="titleBox">
+							<div class="gameDetail">
+								<div class="text1 ft16 ft_weight color_fault">游戏详情</div>
+								<div class="bottomLine ischange1"></div>
+							</div>
+							<div class="comment">
+								<div class="text2 ft16 ft_weight">评价(<span class="ft14">6051</span>)</div>
+								<div class="bottomLine"></div>
+							</div>
+						</div>
+					</div>
+					<!-- 游戏简介 -->
+					<div class="box1">
+						<div class="gameIntrod">
+							<div class="text1 ft16 ft_weight">游戏简介</div>
+							<div class="text2 ft14 ellipse">
+								
+							</div>
+							<div class="watchAll ft14" style="color: #1facf2;text-decoration:underline;">查看更多</div>
+							<!-- 渐变 -->
+							<!-- <div class="gradual"></div> -->
+						</div>
+						<!-- </div> -->
+						<!-- 支持语言 -->
+						<div class="language">
+							<div class="text1 ft16 ft_weight">支持语言</div>
+							<div class="languageType">
+								<div class="text2 ft14">简体中文，繁体中文，英文</div>
+							</div>
+							<!-- 渐变 -->
+							<!-- <div class="gradual"></div> -->
+						</div>
+						<!-- 推荐配置 -->
+						<div class="configure">
+							<div class="text ft16 color_text1">推荐配置</div>
+							<div class="configureBox">
+								<div class="cpu">
+									<div class="text1 ft14 color_text1">处理器</div>
+									<div class="text2 ft14">Intel i3 2nd-Generation 2.5GHz, AMD Quad-Core 2.5GHz</div>
+								</div>
+								<div class="ram">
+									<div class="text1 ft14 color_text1">内存</div>
+									<div class="text2 ft14">4 GB RAM</div>
+								</div>
+								<div class="gtx">
+									<div class="text1 ft14 color_text1">显卡</div>
+									<div class="text2 ft14 ellipse4">Nvidia GT640, AMD Radeon HD7750, 1GB Vram</div>
+								</div>
+								<div class="disk">
+									<div class="text1 ft14 color_text1">硬盘</div>
+									<div class="text2 ft14">需要 13 GB 可用空间</div>
+								</div>
+								<div class="system">
+									<div class="text1 ft14 color_text1">系统</div>
+									<div class="text2 ft14">需要 13 GB 可用空间</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- 评价 -->
+						<div class="evaluate">
+							<div class="text1 ft16 color_text1">评价 (6051)</div>
+							<div class="evaluateBox">
+								<!-- <div class="evaluateItem">
+									<div class="userInfo">
+										<div class="head"></div>
+										<div class="info">
+											<div class="name ft12 color_white_1">kotoka</div>
+											<div class="gameTime ft12 color_text1_06">总时数 5.7小时</div>
+										</div>
+										<div class="good">
+											<div class="text2 ft16 color_white_1 ft_weight">推 荐</div>
+											<div class="pic"></div>
+										</div>
+									</div>
+									<div class="evaluateText ft14 color_text1">游戏是过山车，价格是过山车，我的心情也是过山车，对，拔凉拔凉的那种。 哇的一声哭了 你们这些人啊，还笑我，等过山车变成钻地机看你们还笑的出来不，哼 我不会再受伤了，因为我的心已经死了。</div>
+									<div class="evaluateTime">
+										<div class="time ft12 color_text1">发布于：6月1日</div>
+										<div class="peopleNum ft12"><span class="ft12 color_price">127人</span>觉得有价值</div>
+									</div>
+								</div> -->
+								
+								<!-- <div class="watchMore">
+									<div class="watchMoreBtn ft16 ft_weight">查看更多评论</div>
+								</div> -->
+								
+							</div>
+						</div>
+					</div>
+					
+					<div class="box2" style="display: none;">
+						<div class="evaluate">
+							<div class="text1 ft16 color_text1">评价 (6051)</div>
+							<div class="evaluateHome">
+								<ul>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<!-- 登录 -->
+				<div class="container2 unactive">
+					<div class="loginBox">
+						<div class="loginTitle"></div>
+						<div class="titleLight"></div>
+						<div class="number1 ft14">手机号码</div>
+						<div class="number2">
+							<input type="text" class="account color_white_1" id="phone" placeholder="&nbsp;输入11位手机号">
+						</div>
+						<div class="message1 ft14">短信验证码</div>
+						<div class="message2">
+							<input type="text" class="smsCode color_white_1" id="password">
+							<div class="code ft14">获取验证码</div>
+						</div>
+						<div class="agreement">
+							<div class="agree1 ft12">注册即同意</div>
+							<div class="agree2 ft12">《用户服务协议》</div>
+						</div>
+						<div class="loginBtn"></div>
+						<div class="close"></div>
+					</div>
+				</div>
+				
+				<!-- 什么是畅享游戏 -->
+				<div class="introdGame">
+					<div class="introdBox">
+						<div class="close" style="position: relative;z-index: 6;"></div>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="picBox">
+										<div class="pic">
+											<img src="./images/public/GameCount.png" alt="">
+										</div>
+										<div class="text1 ft18">更好的<span class="ft18 color_price">游戏</span>,更低的<span class="ft18 color_price">折扣</span></div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="picBox">
+										<div class="pic">
+											<img src="./images/public/Lock.png" alt="">
+										</div>
+										<div class="text1 ft18">一键<span class="ft18 color_price">加密登陆</span>,更<span class="ft18 color_price">安全</span></div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="picBox">
+										<div class="pic">
+											<img src="./images/public/localDown.png" alt="">
+										</div>
+										<div class="text1 ft18">游戏支持<span class="ft18 color_price">本地存档</span></div>
+									</div>
+								</div>
+							</div>
+							<!-- 如果需要分页器 -->
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="whiteLine"></div>
+						
+					</div>
+				</div>
+				<!-- 购买界面 -->
+				<div class="buyContent" style="display: none;">
+					<div class="buyBox">
+						<div class="countDown">
+							<div class="text ft14">本单享受首单全返 倒计时</div>
+							<div class="timeBox ft14">
+								<div class="hour"></div>:
+								<div class="minute"></div>:
+								<div class="second"></div>
+							</div>
+						</div>
+						<div class="close"></div>
+						<div class="gameInfo">
+							<!-- <div class="pic">
+								<img src="../images/index/game.png" alt="">
+							</div>
+							<div class="name">
+								<div class="gameName ft14 color_text1 ft_weight">四海兄弟2最终版</div>
+								<div class="price">
+									<div class="newPrice ft12 color_text1">￥<span class="ft16 ft_weight color_text1" style="margin-left: -2px;">123</span></div>
+									<div class="text2 ft12 ft_weight">畅享版</div>
+								</div>
+							</div> -->
+						</div>
+						<div class="payTypeBox">
+							<div class="type ft14 color_text1">选择支付方式</div>
+							<div class="wechat">
+								<div class="wechatBox">
+									<div class="icon"></div>
+									<div class="text3 ft14 color_text1">微信支付</div>
+									<div class="change"></div>
+								</div>
+							</div>
+							<!-- <div class="alipay">
+								<div class="alipayBox">
+									<div class="icon"></div>
+									<div class="text3 ft14 color_text1">支付宝支付</div>
+									<div class="change"></div>
+								</div>
+							</div> -->
+						</div>
+						<div class="buyButton ft16 ft_weight">立即购买</div>
+					</div>
+				</div>
+				
+				<!-- 弹出框 新用户专享 -->
+				<div class="ejectBox unactive">
+					<!-- 弹框盒 -->
+					<div class="ejectSmallBox">
+						<div class="lighting"></div>
+						<!-- 游戏展示框 -->
+						<div class="ejectGetGame">
+							<div class="timeBox">
+								<div class="hour ft12"></div>
+								<div class="minute ft12"></div>
+								<div class="second ft12"></div>
+							</div>
+						</div>
+						<div class="ejectText ft12">恭喜获得首次免单快去下单吧！</div>
+						<div class="ejectBtn"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 联系客户按钮 -->
+			<div class="customerService" onclick="url()">	
+		</div>
+		<script>
+		 (function (w, d, n, a, j) {
+		  w[n] = w[n] || function () {
+		   (w[n].a = w[n].a || []).push(arguments);
+		  };
+		  j = d.createElement('script');
+		  j.async = true;
+		  j.src ='https://qiyukf.com/script/034c03bd656678dc8584dcdf671baed4.js';
+		  d.body.appendChild(j);
+		 })(window, document, 'ysf');
+		</script>
+	</body>
+	<script type="text/javascript" src="./js/domin.js"></script>
+	<script type="text/javascript" src="./js/zepto.min.js"></script>
+	<script type="text/javascript" src="./js/public.js"></script>
+	<script type="text/javascript" src="./js/swiper.min.js"></script>
+	<script type="text/javascript" src="./js/dropload.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// 关闭详情页弹窗
+			$('.ejectSmallBox .ejectBtn').click(function(){
+				$('.ejectBox').addClass('unactive')
+				$('.buyContent').css('display','block')
+			})
+			
+			// 关闭支付窗口
+			$('.buyContent .buyBox .close').click(function(){
+				$('.buyContent').css('display','none')
+				closeOrder()
+			})
+			
+			// 点击游戏简介查看更多按钮
+			$('.watchAll').click(function(){
+				$('.gameIntrod .text2').css('height','100%').removeClass('ellipse')
+				$('.watchAll').css('display','none')
+			})
+			
+			// 点击顶部logo跳转首页
+			$('.w4play').click(function(){
+				if(firstUser.state == true){
+					console.log('11')
+					activityNum = 1
+					window.location.href = 'index.html?channel=' + channel + '&activity=' + activityNum
+				}else{
+					window.location.href = 'index.html?channel=' + channel
+				}
+			})
+			
+			// 点击搜索跳转搜索页面
+			$('.serachlogo').click(function(){
+				goSerach()
+			})
+			var dropload = ''
+			var aaa = true
+			// 点击评论上拉加载更多
+			function dropDown(){
+				// 上拉加载更多插件
+				 dropload = $('.gameBox').dropload({
+					domDown:{
+						domClass:'dropload-down',
+						domRefresh:'<div class="dropload-refresh">上拉加载更多</div>',
+						domLoad:'<div class="dropload-load"><span class="loading"></span>加载中...</div>',
+						domNoData:'<div class="dropload-noData">暂无数据</div>'
+					},
+					isLockUp:false,
+					loadDownFn:function(){
+						
+						console.log('上拉')
+						data.current += 1;
+						console.log(data.current)
+						if(aaa){
+							aaa = false
+						//orderType = 1 折扣 2上架时间 3热销
+						$.ajax({
+							url:onekeyfunDomin + "/game/listGameComments",
+							data:{
+								'appid':productId,
+								'offset':data.current,
+								"limit":'5',
+								},
+							success:function(data){
+								console.log(data)
+								var records = data.data.rows;
+								var result = ''
+								$.each(records,function(index,item){
+									result += `<li>
+										<div class="evaluateItem">
+											<div class="userInfo">
+												<div class="head">
+													<img src="images/public/loginState.png" alt="">
+												</div>
+												<div class="info">
+													<div class="name ft12 color_white_1">${item.commentatorNickname}</div>
+													<div class="gameTime ft12 color_text1_06">总时数 ${item.playedHours}小时</div>
+												</div>
+												<div class="good">
+													<div class="text2 ft16 color_white_1 ft_weight">推 荐</div>
+													<div class="pic"></div>
+												</div>
+											</div>
+											<div class="evaluateText ft14 color_text1 ellipse4">${item.commentContent}</div>
+											<div class="evaluateTime">
+												<div class="time ft12 color_text1">发布于：${item.postTime}</div>
+												<div class="peopleNum ft12"><span class="ft12 color_price">${item.estimateContentLength}人</span>觉得有价值</div>
+											</div>
+										</div>
+									</li>`;
+								})
+								setTimeout(function(){
+									$('.evaluateHome ul').append(result);
+									// 每次数据加载完，必须重置
+									dropload.resetload();
+									aaa = true
+								},1000)
+							},
+							error:function(xhr,type){
+								console.log('Ajax error!');
+								// 即使加载出错，也得重置
+								dropload.resetload();
+							}
+						})
+					}
+					}
+				})
+			}
+			
+			
+			
+			$('.introdGame').hide()
+			// 点击游戏详情
+			$('.titleChange .titleBox .gameDetail').click(function(){
+				dropload.isLockUp = true;
+				aaa = false
+				$('.dropload-down').remove()
+				$('.evaluateHome ul').html('')
+				$('.gameDetail .text1').addClass('color_fault')
+				$('.gameDetail .bottomLine').addClass('ischange1')
+				$('.comment .text2').removeClass('color_fault')
+				$('.comment .bottomLine').removeClass('ischange2')
+				$('.watchMore').show()
+				$('.box1').show()
+				$('.box2').hide()
+			
+			})
+			// 点击评论
+			$('.titleChange .titleBox .comment').click(function(){
+				dropload.isLockUp = false;
+				aaa = true
+				$('.evaluateHome ul').html('')
+				$('.comment .text2').addClass('color_fault')
+				$('.comment .bottomLine').addClass('ischange2')
+				$('.gameDetail .text1').removeClass('color_fault')
+				$('.gameDetail .bottomLine').removeClass('ischange1')
+				$('.box1').hide()
+				$('.box2').show()
+				$('.watchMore').hide()
+				dropDown()
+				
+			
+			})
+			
+			// 点击什么是畅享版游戏跳转畅享版游戏说明
+			$('.explainBox .explain').click(function(){
+				$('.introdGame').show()
+				$('.introdBox').show().css({
+					'bottom':'0',
+					"transition":'1000ms'
+				})
+			})
+			
+			// 点击如何启动游戏跳转howtoplay页面
+			$('.explainBoxTwo .explain').click(function(){
+				window.location.href = 'howToPlayGame.html?channel=' + channel
+			})
+			
+			$('.introdBox').on('click','.close',function(){
+				$('.introdGame').hide()
+				$('.introdBox').hide().css({
+					'bottom':'-4.5rem',
+					"transition":'1000ms'
+				})
+				
+				
+			})
+			// 当前的渠道ID
+			var channel = valueByName(location.href,'channel');
+			// 当前详情页的商品appid
+			var productId = valueByName(location.href,"appId");
+			// 保存数据
+			var detailInfo = {gameNeedMin:'',detailImg:'',gameNeedBest:'',res:'',desc:'',language:''}
+			//https://media.st.dl.pinyuncloud.com/steam/apps/870780/extras/CONTROL-01-V2.gif?t=1614637768
+			//https://cdn.cloudflare.steamst .com/steam/apps/870780/extras/CONTROL-01-V2.gif?t=1614637768
+			var aaa = null;
+			// 获取详情页游戏数据
+			function detailGame(){
+				var localInfo = JSON.parse(localStorage.getItem('userInfo'))
+				$.ajax({
+					url:onekeyfunDomin + "/game/info",
+					data:{'appId':productId},
+					success:function(result){
+						// console.log(result)
+						// 如果用户登录了，则弹出首单全返弹窗
+						if(localStorage.userInfo !== undefined){
+							$('.userIcon').removeClass('unlogin')
+							$('.userIcon img').css('display','block')
+							// 首单全返活动接口							$.ajax({								url:onekeyfunDomin + '/activity/join',								data:{'OKF_TOKEN':localInfo.userOKF},								success:function(res){									// console.log(res)									// 保存用户状态									firstUser.state = res.flag									if(res.flag){										aaa = setTimeout(function(){											$('.ejectBox').removeClass('unactive')										},5000)
+										// 付款定时器
+										fifteenMin(res.data.activeLong)
+										// 15分钟后用户首单状态自动失效
+										setTimeout(function(){
+											firstUser.state = false
+										},res.data.activeLong * 1000)									}								}							})
+						}
+						$(`<div class="pic">
+								<img src="${result.image}" alt="">
+							</div>
+							<div class="name">
+								<div class="gameName ft14 color_text1 ft_weight">${result.chinaName}</div>
+								<div class="price">
+									<div class="newPrice ft12 color_text1">￥<span class="ft16 ft_weight color_text1" style="margin-left: -2px;"></span></div>
+									<div class="text2 ft12 ft_weight">畅享版</div>
+								</div>
+							</div>`).appendTo($('.buyContent .buyBox .gameInfo'));
+						detailInfo.res = result
+						detailInfo.detailImg = result.gameImages
+						detailInfo.gameNeedBest = JSON.parse(result.detailedInfo.systemNeedsRecommend)
+						detailInfo.desc = result.detailedInfo.description
+						// console.log(detailInfo.desc)
+						detailInfo.language = language(result.attributes.supportedlang)
+						
+						// 游戏原价
+						$('.priceBox1 .oldPrice').text(result.steamPrce)
+						// 详情页中文名
+						$('.chinese').text(detailInfo.res.chinaName)
+						// 详情页英文名
+						$('.english').text(detailInfo.res.englishName)
+						// 详情页游戏价格
+						$('.playersDay').text(detailInfo.res.playersDay)
+						// 游戏简介
+						$('.gameIntrod .text2').html(detailInfo.desc)
+						// 支持语言
+						$('.languageType .text2').text(detailInfo.language)
+						// 推荐配置
+						// console.log(detailInfo.gameNeedBest)
+						$('.cpu .text2').text(detailInfo.gameNeedBest.Processor)
+						$('.ram .text2').text(detailInfo.gameNeedBest.Memory)
+						$('.gtx .text2').text(detailInfo.gameNeedBest.Graphics)
+						$('.disk .text2').text(detailInfo.gameNeedBest.Storage)
+						$('.system .text2').text(detailInfo.gameNeedBest.null)
+						// 轮播游戏图
+						var gamePic = ''
+						$.each(detailInfo.detailImg,function(index,item){
+							if(item.carouselAddress.indexOf('mp4') !== -1){
+								gamePic += `<div class="swiper-slide" data-index="${index}">
+										<div class="gamephoto1">
+											<video class="video" src="${item.carouselAddress}" controls="controls">
+											</video>
+											<div class='video-Pic'>
+												<img src="${item.thumbnailAddress}" alt="">
+											</div>
+											<div class='video-img'></div>
+										</div>
+									</div>`
+							}else{
+								gamePic += `<div class="swiper-slide">
+										<div class="gamephoto2">
+											<img src="${picSize(item.carouselAddress)}" alt="">
+										</div>
+									</div>`
+							}
+						});
+						
+						$('.gamephotoBox .swiper-wrapper').on('click','.swiper-slide',function(){
+							// console.log($(this).data('index'))
+							$(this).find('.video-img').hide()
+							$(this).find('.video-Pic').hide()
+							$(this).find('.video')[0].play()
+						})
+						
+						$('.gamephotoBox .swiper-wrapper').append(gamePic);
+					}
+					
+				})
+			}
+			
+			// 畅想说明轮播
+			var mySwiper = new Swiper ('.swiper-container', {
+			  direction: 'horizontal', // 垂直切换选项
+			  loop: false, // 循环模式选项
+			  observer:true,//修改swiper自己或子元素时，自动初始化swiper
+			  observeParents:true,//修改swiper的父元素时，自动初始化swiper
+			  slidesPerView: 'auto',
+			  spaceBetween: -20,
+			  touchRatio : 3,
+			  centeredSlides : true,//初始位置为第一个
+			  // 如果需要分页器
+			  pagination: {
+			    el: '.swiper-pagination',
+			  },
+			})
+			
+			//api.we4game.com/app/game/listGameComments?appid=500&offset=1&limit=3
+			//gapi.we4game.com/app/game/listGameComments?appId=271590&offset=1&limit=5
+			// 获取详情页评论
+			function gameComment(){
+				$.ajax({
+					type:'GET',
+					url:onekeyfunDomin + "/game/listGameComments",
+					data:{'appid':productId,'offset':'1',"limit":'5'},
+					success:function(result){
+						// console.log(result)
+						var comArr = result.data.rows
+						// console.log(comArr)
+						for(var i = 0;i< comArr.length;i++){
+							$(`<div class="evaluateItem">
+								<div class="userInfo">
+									<div class="head">
+										<img src="images/public/loginState.png" alt="">
+									</div>
+									<div class="info">
+										<div class="name ft12 color_white_1">${comArr[i].commentatorNickname}</div>
+										<div class="gameTime ft12 color_text1_06">总时数 ${comArr[i].playedHours}小时</div>
+									</div>
+									<div class="good">
+										<div class="text2 ft16 color_white_1 ft_weight">推 荐</div>
+										<div class="pic"></div>
+									</div>
+								</div>
+								<div class="evaluateText ft14 color_text1 ellipse4">${comArr[i].commentContent}</div>
+								<div class="evaluateTime">
+									<div class="time ft12 color_text1">发布于：${comArr[i].postTime}</div>
+									<div class="peopleNum ft12"><span class="ft12 color_price">${comArr[i].estimateContentLength}人</span>觉得有价值</div>
+								</div>
+							</div>`).appendTo('.evaluateBox');
+						}
+						// 5条评论加载完毕之后再插入查看更多评论按钮
+						$(`<div class="watchMore">
+							<div class="watchMoreBtn ft16 ft_weight">查看更多评论</div>
+						</div>`).appendTo('.evaluateBox');
+					}
+				})
+			}
+			// 点击查看更多按钮
+			$('.box1').on('click','.watchMoreBtn',function(){
+				console.log('111')
+				data.current = 0
+				dropload.isLockUp = false;
+				aaa = true
+				// $('html,body').animate({scrollTop: $('.titleChange .titleBox .comment').offset().top}, 1000);
+				$('.box1').hide()
+				$('.watchMore').hide()
+				$('.comment .text2').addClass('color_fault')
+				$('.comment .bottomLine').addClass('ischange2')
+				$('.gameDetail .text1').removeClass('color_fault')
+				$('.gameDetail .bottomLine').removeClass('ischange1')
+				setTimeout(()=>{
+					$('.box2').css('display','block')
+				},500)
+				dropDown()
+			})
+			
+			// 点击详情页购买按钮
+			$('.buyGameBox').on('touchend',function(){
+				// console.log(localStorage.userInfo)
+					if(localStorage.userInfo === undefined){
+						$('.container2').removeClass('unactive')
+					}else{
+						// 本地token
+						var localInfo = JSON.parse(localStorage.getItem('userInfo'))
+						$('.userIcon').removeClass('unlogin')
+						$('.userIcon img').css('display','block')
+						creadOrderDatas.OKF_TOKEN = localInfo.userOKF
+						OKF_TOKEN = localInfo.userOKF
+						
+						clearTimeout(aaa)
+						aaa = null;
+						
+						creadOrder()
+					}
+					isLogin()
+			})
+			
+
+			// 点击弹出框现在下单按钮
+			$('.ejectBtn').on('touchend',function(){
+				if(localStorage.userInfo === undefined){
+					$('.container2').removeClass('unactive')
+				}else{
+					creadOrder()
+				}
+			})
+			
+			
+			// 存储的信息
+			var userInfo = {
+				userName:$('#phone').val(),
+				userOKF:data.code
+			}
+
+			var count = 0;//定时器时间
+			var orderId = '';
+			var indexStockData={};//保存库存数据
+			// 保存订单数据
+			var creadOrderDatas={
+				'appId':productId,
+				'productId':gameId,
+				'OKF_TOKEN': OKF_TOKEN,
+				'payType':2,
+				'balanceType':0,
+				"model":'2',
+				"creditType":0
+			};
+			// 保存订单付款信息
+			var list = {
+				'orderId':'',
+			};
+			var orderTogetherData = '';//保存合玩数据
+			// var qrCodeSrc = './images/phoneVer.png';//默认付款图片
+			var orderProductIdData = '';//保存独享数据
+			var orderchangeData = '';//变量保存合玩或者独享数据
+			var listdata = '';//保存付款订单数据
+			
+			// 保存该游戏的合玩价格
+			var togetherGamePrice = 0
+			// 保存当前游戏的productId（游戏产品ID）
+			var gameId = ''
+			// 进入页面检查该游戏是否存在合玩库存,如果没有则隐藏购买按钮
+			function findSaleData(){
+				$.ajax({
+					// 获取详情页数据接口
+					url:onekeyfunDomin + '/game/findSaleData',
+					data:{'appId':productId},
+					success:function(dataOrder){
+						gameId = dataOrder.data.together.productId
+						togetherGamePrice = dataOrder.data.together.price
+						if(dataOrder.flag){
+							// 保存合玩数据
+							orderTogetherData = dataOrder.data.together
+							// 创建订单之前  配置创建订单的参数信息
+							creadOrderDatas.model = 2
+							creadOrderDatas.productId = gameId
+							creadOrderDatas.creditType = 0
+							// 查看库存参数赋值
+							indexStockData.OKF_TOKEN = OKF_TOKEN
+							indexStockData.appId = productId
+							indexStockData.productId = gameId
+						}else{
+							alert('请重新登录')
+							$('.container2').removeClass('unactive')
+						}
+						// console.log(Object.keys(dataOrder.data.together).length === 0)
+						if(Object.keys(dataOrder.data.together).length === 0){
+							$('.buyGameBox').hide()
+						}else{
+							$('.priceBox1 .newPrice .newPriceItem').text(togetherGamePrice)
+							$('.name .price .newPrice span').text(togetherGamePrice)
+						}
+					}
+				})
+			}
+			
+			// 保存用户状态
+			var firstUser = {state:''}
+
+			// 创建订单
+			// /app/mobile/order/create
+			function creadOrder(){
+				if(firstUser.state){
+					// 首单全返订单接口
+					$.ajax({
+						type:'GET',
+						// 查询库存接口
+						url:onekeyfunDomin + '/order/stock',
+						data:indexStockData,
+						dataType:'json',
+						success:function(type){
+							console.log(type)
+							if(type.flag){
+								$.ajax({
+									// 活动订单接口
+									url:onekeyfunDomin + '/activity/create',
+									data:{
+										'OKF_TOKEN':activityInfo.userOKF,
+										'appId':productId,
+										'productId':gameId,
+										'payType':2,
+										'channel':channel,
+										'activityId':1,
+										'isMobile':1
+									},
+									success:function(type){
+										console.log(type)
+										if(type.flag){
+											// window.location.href = type.data.qrcode
+											isPay = type.data.qrcode
+											// 保存订单orderId
+											list.orderId = type.data.orderId
+											// 保存订单付款信息
+											listdata = type.data
+											list.OKF_TOKEN = OKF_TOKEN
+											$('.buyContent').css('display','block')
+											$('.buyContent .countDown').css('display','flex')
+											// 启动付款定时器
+											setTimer()
+										}else{
+											// 如果为false，说明该用户已经购买该游戏
+											alert('你已拥有该游戏')
+										}
+									}
+								})
+							}
+						}
+					})
+				}else{
+					$('.buyContent .countDown').css('display','none')
+					$.ajax({
+						type:'GET',
+						url:onekeyfunDomin + '/order/stock',
+						data:indexStockData,
+						dataType:'json',
+						success:function(type){
+							console.log(type)
+							if(type.flag){
+								$.ajax({
+									type:'GET',
+									// 手机端正常购买接口
+									url:onekeyfunDomin + '/mobile/order/create',
+									data:creadOrderDatas,
+									dataType:'json',
+									// creditType: 0,
+									success:function(data){
+										console.log(data)
+										if(data.flag){
+											// window.location.href = data.data.qrcode
+											isPay = data.data.qrcode
+											console.log(isPay)
+											// 保存订单orderId
+											list.orderId = data.data.orderId
+											// 保存订单付款信息
+											listdata = data.data
+											list.OKF_TOKEN = OKF_TOKEN
+											$('.buyContent').css('display','block')
+											// 启动付款定时器
+											setTimer()
+										}else{
+											alert(data.message)
+										}
+										
+									}
+								});
+							}else{
+								// 如果为false，说明该用户已经购买该游戏
+								alert('你已拥有该游戏')
+							}
+						}
+					});
+				}
+				
+			}		
+			
+			// 每隔一秒查询一次订单状态
+			var timer = '';
+			function setTimer(){
+				var localInfo = JSON.parse(localStorage.getItem('userInfo'))
+				timer = setInterval(function(){
+					$.ajax({
+						type:'GET',
+						url:onekeyfunDomin + '/order/query',
+						data:{
+							'OKF_TOKEN':localInfo.userOKF,
+							'orderId':list.orderId
+						},
+						dataType:'json',
+						success:function(data){
+							console.log(data)
+							// 查询订单状态
+							if(data.flag){
+								console.log('定时器销毁')
+								// 打开支付成功窗口 并销毁定时器
+								// $('').addClass('undernone')
+								$('.buyContent').css('display','none')
+								window.location.href = 'paySuccess.html?channel=' + channel
+								// $('').removeClass('undernone')
+								clearInterval(timer);
+								timer = null
+							}
+						}
+					});
+				},1000)
+			}
+			
+			// 检查是否登陆
+			function isLogin(){
+				if(OKF_TOKEN == ''){
+					// alert('请先登陆')
+				}
+				if(timer != null){
+					closeOrder()
+				}
+			}
+			
+			// 关闭之前的订单定时器
+			function closeOrder(){
+				clearInterval(timer);
+				timer = null
+			}
+			
+			
+			var isPay = ''  //支付跳转链接
+			// 点击立即购买
+			$('.buyButton').on('touchstart',function(){
+				if(localStorage.userInfo === undefined){
+					$('.container2').removeClass('unactive')
+				}else{
+					window.location.href = isPay
+				}
+				
+			})
+			
+			// 点击头像进入我的订单
+			$('.userIcon').on('touchstart',function(){
+				if(localStorage.userInfo === undefined){
+					$('.container2').removeClass('unactive')
+				}else{
+					window.location.href = 'myOrder.html?channel=' + channel
+				}
+			})
+			
+			// 获取本地TOKEN
+			var activityInfo = JSON.parse(localStorage.getItem('userInfo'))
+			
+		
+			findSaleData()
+			gameComment()
+			detailGame()
+		})	
+	</script>
+</html>

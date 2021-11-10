@@ -1,0 +1,1 @@
+var onekeyfunDomin = 'https://source.sgsugou.com/app';

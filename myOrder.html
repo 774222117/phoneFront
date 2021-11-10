@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>   
+		<meta name="description" content="W4PLAY,天天都玩好游戏，折扣游戏，电脑游戏">
+		<meta name="keywords" content="W4PLAY,天天都玩好游戏">
+		<meta name="generator" content="w4play">
+		<meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+		<meta name="screen-orientation" content="portrait"><!--uc强制竖屏-->
+		<meta name="x5-orientation" content="portrait"><!--QQ强制竖屏-->
+		<meta name="full-screen" content="yes"><!--UC强制全屏-->
+		<meta name="x5-fullscreen" content="true"> <!--QQ强制全屏-->
+		<meta name="browsermode" content="application"><!--UC应用模式-->
+		<meta name="x5-page-mode" content="app"><!--QQ应用模式-->
+		<title>W4PLAY-天天都玩好游戏</title>
+		<link rel="stylesheet" type="text/css" href="./css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/myOrder.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/swiper.css"/>
+		<style type="text/css">
+		</style>
+	</head>
+	<body style="overflow-x:hidden;">
+		<div id="app">
+			<div>
+				<!-- 首页顶部 -->
+				<div class="topbar">
+					<div class="topbarItem">
+						<div class="w4play"></div>
+						<div class="serach">
+							<!-- 搜索框 -->
+							<input type="text" class="serachbox" placeholder="绝地求生" id="gameName">
+							<div class="serachlogo"></div>
+						</div>
+						<div class="userIcon" style="background-color: black;">
+							<img src="images/public/loginState.png" alt="" style="display: none;">
+						</div>
+					</div>
+				</div>
+				
+				<!-- 余额 -->
+				<div class="balance">
+					<div class="W4balance">
+						<div class="text ft14">W4PLAY 余额</div>
+						<div class="W4number ft20"></div>
+					</div>
+					<div class="W4PB">
+						<div class="text ft14">W4PLAY P币</div>
+						<div class="PBnumber ft20"></div>
+					</div>
+				</div>
+				
+				<!-- 全部订单 -->
+				<div class="allOrder">
+					<!-- 标题 -->
+					<div class="orderTitleBox">
+						<div class="orderTitle">
+							<div class="text ft16 ft_weight">全部订单</div>
+							<div class="question"></div>
+							<div class="text1 ft14">如何启动游戏</div>
+						</div>
+					</div>
+					<!-- 游戏订单信息 -->
+					<div class="bigBox" style="display: block;">
+						
+						<!-- <div class="orderInfoBox">
+							<div class="orderInfo">
+								<div class="gameInfoBox">
+									<div class="gameInfo">
+										<div class="gamePic">
+											<img src="./images/index/game.png">
+										</div>
+										<div class="gameNamePrice">
+											<div class="gameName ft14">四海兄弟2最终版四海兄弟2最终版四海兄弟2最终版</div>
+											<div class="gamePrice ft11 color_price">￥<span class="ft14 color_price ft_weight">98.6</span></div>
+										</div>
+										<div class="orderQuestion ft14 color_price">订单问题</div>
+									</div>
+								</div>
+								<div class="payInfo">
+									<div class="number ft14">订单编号：<span class="ft14" style="color: rgba(216,240,255,0.85);">10WRMS20210320000150847639</span></div>
+									<div class="payTime ft14">下单时间：<span class="ft14" style="color: rgba(216,240,255,0.85);">2019-06-18</span><span class="ft14" style="color: rgba(216,240,255,0.85);">10:28:30</span></div>
+									<div class="orderState">
+										<div class="orderStateInfo ft14">订单状态：<span class="ft14" style="color: rgba(216,240,255,0.85);">已完成</span></div>
+									</div>
+								</div>
+								<div class="gradual"></div> 
+							</div>
+						</div> -->
+						
+					</div>
+					<div class="bigBox2" style="display: none;">
+						<div class="noOrder">
+							<div class="svg">
+								<svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M46.2783 60.3728C38.6274 60.3728 32.4019 54.148 32.4019 46.4963C32.4019 38.8447 38.6267 32.6199 46.2783 32.6199C53.93 32.6199 60.1548 38.8447 60.1548 46.4963C60.1548 54.148 53.9292 60.3728 46.2783 60.3728ZM46.2783 35.3638C40.1405 35.3638 35.1458 40.3578 35.1458 46.4963C35.1458 52.6349 40.1397 57.6289 46.2783 57.6289C52.4169 57.6289 57.4109 52.6349 57.4109 46.4963C57.4109 40.3578 52.4161 35.3654 46.2783 35.3654V35.3638Z" fill="#E3F7FF" fill-opacity="0.12"/>
+								<path d="M28.3525 61H9.27899C7.04311 60.9975 4.89951 60.1082 3.31851 58.5272C1.7375 56.9462 0.848193 54.8026 0.845703 52.5667V8.43328C0.848193 6.1974 1.7375 4.05381 3.31851 2.4728C4.89951 0.891794 7.04311 0.00249008 9.27899 0L47.4252 0C49.661 0.00249008 51.8046 0.891794 53.3856 2.4728C54.9666 4.05381 55.856 6.1974 55.8584 8.43328V28.0187C55.8584 28.3826 55.7139 28.7315 55.4566 28.9888C55.1993 29.2461 54.8503 29.3907 54.4865 29.3907C54.1226 29.3907 53.7736 29.2461 53.5163 28.9888C53.2591 28.7315 53.1145 28.3826 53.1145 28.0187V8.43328C53.1128 6.92488 52.5129 5.47874 51.4463 4.41214C50.3797 3.34554 48.9336 2.74559 47.4252 2.74393H9.27899C7.77059 2.74559 6.32444 3.34554 5.25784 4.41214C4.19124 5.47874 3.5913 6.92488 3.58964 8.43328V52.5667C3.5913 54.0751 4.19124 55.5213 5.25784 56.5879C6.32444 57.6545 7.77059 58.2544 9.27899 58.2561H28.3525C28.7163 58.2561 29.0653 58.4006 29.3226 58.6579C29.5799 58.9152 29.7244 59.2642 29.7244 59.628C29.7244 59.9919 29.5799 60.3409 29.3226 60.5982C29.0653 60.8555 28.7163 61 28.3525 61Z" fill="#E3F7FF" fill-opacity="0.12"/>
+								<path d="M45.7074 15.7517H11.351C10.9872 15.7517 10.6383 15.6071 10.381 15.3498C10.1238 15.0925 9.97929 14.7436 9.97929 14.3798C9.97929 14.016 10.1238 13.667 10.381 13.4098C10.6383 13.1525 10.9872 13.0079 11.351 13.0078H45.7074C46.0712 13.0079 46.4201 13.1525 46.6773 13.4098C46.9345 13.667 47.079 14.016 47.079 14.3798C47.079 14.7436 46.9345 15.0925 46.6773 15.3498C46.4201 15.6071 46.0712 15.7517 45.7074 15.7517ZM45.3993 27.1375H11.0429C10.679 27.1375 10.33 26.993 10.0727 26.7357C9.81544 26.4784 9.6709 26.1294 9.6709 25.7655C9.6709 25.4017 9.81544 25.0527 10.0727 24.7954C10.33 24.5381 10.679 24.3936 11.0429 24.3936H45.3993C45.7631 24.3936 46.1121 24.5381 46.3694 24.7954C46.6267 25.0527 46.7712 25.4017 46.7712 25.7655C46.7712 26.1294 46.6267 26.4784 46.3694 26.7357C46.1121 26.993 45.7631 27.1375 45.3993 27.1375ZM30.1798 37.7793H11.1456C10.7817 37.7792 10.4329 37.6346 10.1756 37.3773C9.91839 37.12 9.77389 36.7711 9.77389 36.4073C9.77389 36.0435 9.91839 35.6946 10.1756 35.4373C10.4329 35.18 10.7817 35.0354 11.1456 35.0353H30.1798C30.5437 35.0354 30.8925 35.18 31.1498 35.4373C31.407 35.6946 31.5515 36.0435 31.5515 36.4073C31.5515 36.7711 31.407 37.12 31.1498 37.3773C30.8925 37.6346 30.5437 37.7792 30.1798 37.7793ZM24.5712 48.7942H11.2436C10.8797 48.7942 10.5307 48.6497 10.2734 48.3924C10.0161 48.1351 9.8716 47.7861 9.8716 47.4222C9.8716 47.0584 10.0161 46.7094 10.2734 46.4521C10.5307 46.1948 10.8797 46.0503 11.2436 46.0503H24.5712C24.9351 46.0503 25.2841 46.1948 25.5414 46.4521C25.7987 46.7094 25.9432 47.0584 25.9432 47.4222C25.9432 47.7861 25.7987 48.1351 25.5414 48.3924C25.2841 48.6497 24.9351 48.7942 24.5712 48.7942Z" fill="#E3F7FF" fill-opacity="0.12"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M40.3156 52.1772C40.8516 52.7132 41.7206 52.7132 42.2566 52.1772L46.2465 48.1873L50.2364 52.1772C50.7724 52.7132 51.6414 52.7132 52.1774 52.1772C52.7134 51.6412 52.7134 50.7722 52.1774 50.2362L48.1875 46.2463L52.1773 42.2565C52.7133 41.7205 52.7133 40.8515 52.1773 40.3155C51.6413 39.7795 50.7723 39.7795 50.2363 40.3155L46.2465 44.3053L42.2567 40.3155C41.7207 39.7795 40.8517 39.7795 40.3157 40.3155C39.7797 40.8515 39.7797 41.7205 40.3157 42.2565L44.3055 46.2463L40.3156 50.2362C39.7796 50.7722 39.7796 51.6412 40.3156 52.1772Z" fill="#E3F7FF" fill-opacity="0.12"/>
+								</svg>
+							</div>
+							<div class="svgText ft12">暂时还木有订单噢～</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 订单问题 -->
+			<div class="container1" style="display: none;">
+				<div class="orderProblem">
+					<div class="close"></div>
+					<div class="content ft16">如遇到游戏问题，请在电脑客户端-我的订单页面咨询客服或申请订单维权。</div>
+					<div class="installBtn ft16 ft_weight">如何安装客户端</div>
+				</div>
+			</div>
+			<!-- 联系客户按钮 -->
+			<div class="customerService" onclick="url()">	
+		</div>
+		<script>
+		 (function (w, d, n, a, j) {
+		  w[n] = w[n] || function () {
+		   (w[n].a = w[n].a || []).push(arguments);
+		  };
+		  j = d.createElement('script');
+		  j.async = true;
+		  j.src ='https://qiyukf.com/script/034c03bd656678dc8584dcdf671baed4.js';
+		  d.body.appendChild(j);
+		 })(window, document, 'ysf');
+		</script>
+	</body>
+	<script type="text/javascript" src="./js/domin.js"></script>
+	<script type="text/javascript" src="./js/zepto.min.js"></script>
+	<script type="text/javascript" src="./js/public.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// 当前的渠道ID
+			var channel = valueByName(location.href,'channel');
+			
+			// 点击搜索跳转搜索页面
+			$('.serachlogo').click(function(){
+				goSerach()
+			})
+			
+			// 点击顶部logo跳转首页
+			$('.w4play').click(function(){
+				goBackIndex()
+			})
+			
+			// 点击如何启动游戏跳转howToPlay
+			$('.orderTitle .text1').click(function(){
+				window.location.href = 'howToPlayGame.html?channel=' + channel
+			})
+			
+			//1待发货游戏 2 已发货游戏 -2已失效 -3 已申请退款
+			var orderStatus = {
+				1:'待发货游戏',
+				2:'已发货游戏',
+				3:'已失效',
+				4:'已申请退款'
+			}
+			// console.log(orderStatus)
+			//api.we4game.com/app/account/findOrders?current=1&limit=10&name=&OKF_TOKEN=d548fb2616224e5c921fcee2132b225c
+			// 获取我的订单信息
+			function myOrderInfo(){
+				$.ajax({
+					type:'GET',
+					url:onekeyfunDomin + '/account/findOrders',
+					data:{
+						'current':1,
+						'limit':10,
+						'OKF_TOKEN':JSON.parse(localStorage.userInfo).userOKF,
+					},
+					success:function(res){
+						// console.log(res)
+						var orderInfo = res.data.rows
+						var result = ''
+						// console.log(orderInfo)
+						$.each(orderInfo,function(index,item){
+							result += `<div class="orderInfoBox">
+							<div class="orderInfo">
+								<div class="gameInfoBox">
+									<div class="gameInfo">
+										<div class="gamePic">
+											<img src="${item.image}">
+										</div>
+										<div class="gameNamePrice">
+											<div class="gameName ft14">${item.chinaName || item.englishName}</div>
+											<div class="gamePrice ft11 color_price">￥<span class="ft14 color_price ft_weight">${item.price}</span></div>
+										</div>
+										<div class="orderQuestion ft14 color_price">订单问题</div>
+									</div>
+								</div>
+								<div class="payInfo">
+									<div class="number ft14">订单编号：<span class="ft14" style="color: rgba(216,240,255,0.85);">${item.ordersn}</span></div>
+									<div class="payTime ft14">下单时间：<span class="ft14" style="color: rgba(216,240,255,0.85);">${item.createTime}</span><span class="ft14" style="color: rgba(216,240,255,0.85);">10:28:30</span></div>
+									<div class="orderState">
+										<div class="orderStateInfo ft14">订单状态：<span class="ft14" style="color: rgba(216,240,255,0.85);">${orderStatus[item.status]}</span></div>
+									</div>
+								</div>
+								<div class="gradual"></div> 
+							</div>
+						</div>`;
+						})
+						$('.bigBox').append(result)
+						if(orderInfo == ''){
+							$('.bigBox').css('display','none')
+							$('.bigBox2').css('display','block')
+						}
+						
+					}
+				})
+			}
+			myOrderInfo()
+			
+			// 点击订单问题弹出如何安装客户端
+			$('.bigBox').on('click','.orderQuestion',function(){
+				$('.container1').css('display','block')
+			})
+			
+			// 点击弹窗关闭按钮
+			$('.container1 .close').click(function(){
+				$('.container1').css('display','none')
+			})
+
+			// 点击如何安装客户端
+			$('.installBtn').click(function(){
+				window.location.href = 'howToPlayGame.html?channel=' + channel
+			})
+			
+			// 获取本地TOKEN
+			var activityInfo = JSON.parse(localStorage.getItem('userInfo'))
+			
+			// 获取用户余额
+			function getBalance(){
+				$.ajax({
+					type:'GET',
+					url:onekeyfunDomin + '/account/getBalance',
+					data:{'OKF_TOKEN':activityInfo.userOKF},
+					success:function(data){
+						$('.balance .W4number').text(data.data.balance)
+						$('.W4PB .PBnumber').text(data.data.credit)
+					}
+				})
+			}
+			
+			getBalance()
+			readyLogin()
+		})
+	</script>
+</html>

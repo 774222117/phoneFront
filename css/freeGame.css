@@ -1,0 +1,522 @@
+/* 顶部 */
+.topbar{width: 100%;height: 0.66rem;background-color: #051824;display: flex;align-items: center;}
+.topbar .topbarItem{width: 3.75rem;height: 0.36rem;display: flex;align-items: center;}
+.topbar .topbarItem .w4play{width: 1.04rem;height: 0.25rem;margin-left: 0.16rem;background: url(../images/index/w4playlogo.png)no-repeat;background-size: cover;}
+.topbar .topbarItem .serach{width: 1.36rem;height: 0.36rem;margin-left: 0.6rem;background-color: #0b273a;border-radius: 33px;display: flex;align-items: center;}
+.topbar .topbarItem .serach .serachbox{width: 0.9rem;height: 0.21rem;margin-left: 0.12rem;background-color: #0b273a;color: #FFFFFF;}
+.topbar .topbarItem .serach .serachlogo{width: 0.24rem;height: 0.24rem;background: url(../images/index/iconSearch.png)no-repeat;cursor: pointer;background-size: cover;}
+.topbar .topbarItem .userIcon{width: 0.36rem;height: 0.36rem;margin-left: 0.08rem;border-radius: 50%;position: relative;}
+.topbar .topbarItem .userIcon img {width: 100%;height: 100%;position: absolute;}
+.unlogin {background-color: black;}
+
+/* 登陆 */
+.container2 {width: 100%;height: 300%;background: rgba(6,26,40,0.47);position: absolute;z-index: 5;top: 0;left: 0;}
+.container2 .loginBox {width: 3.15rem;height: 3.55rem;background-color: #0d2d42;position: fixed;top: 1.8rem;left: 0.3rem;display: flex;flex-direction: column;border: 1px solid rgba(227,163,255,0.24);border-radius: 10px;}
+.loginBox .loginTitle {width: 2.82rem;height: 0.71rem;margin: 0.18rem 0 0 0.18rem;background: url(../images/public/bannerTitle.png)no-repeat;background-size: cover;}
+.loginBox .titleLight {width: 2.33rem;height: 1.84rem;position: absolute;left: 0.98rem;top: -0.98rem;background: url(../images/public/bannerPic.png)no-repeat;background-size: cover;}
+.container2 .loginBox .number1 {width: 0.6rem;height: 0.2rem;color: rgba(235,235,245,0.65);margin: 0.15rem 0 0 0.18rem;}
+.container2 .loginBox .number2 {width: 2.72rem;height: 0.36rem;background-color: rgba(5,24,36,0.8);margin: 0.04rem 0 0 0.18rem;display: flex;align-items: center;}
+.container2 .loginBox .number2 input{width: 1.7rem;height: 0.2rem;padding-left: 0.08rem;background-color: rgba(5,24,36,0.6);}
+.container2 .loginBox .message1 {width: 0.8rem;height: 0.2rem;color: rgba(235,235,245,0.65);margin: 0.12rem 0 0 0.18rem;}
+.container2 .loginBox .message2 {width: 2.72rem;height: 0.36rem;background-color: rgba(5,24,36,0.8);margin: 0.04rem 0 0 0.18rem;display: flex;align-items: center;}
+.container2 .loginBox .message2 input{width: 1.5rem;height: 0.2rem;padding-left: 0.08rem;background-color: rgba(5,24,36,0.6);}
+.container2 .loginBox .message2 .code{min-width: 1rem;height: 0.2rem;color: #5cd0ff;cursor: pointer;text-align: left;text-align: right;margin-left: 0.08rem;}
+.container2 .loginBox .agreement {width: 1.8rem;height: 0.2rem;margin: 0.10rem 0 0 0.15rem;display: flex;}
+.container2 .loginBox .agreement .agree1{width: 0.68rem;height: 0.2rem;text-align: center;color: rgba(216,240,255,0.65);}
+.container2 .loginBox .agreement .agree2{width: 1rem;height: 0.2rem;text-align: center;color: rgba(216,240,255,0.85);}
+.container2 .loginBox .loginBtn {width: 1.87rem;height: 0.45rem;line-height: 0.45rem;background: url(../images/public/loginBtn.png)no-repeat;background-size: cover;
+margin: 0.2rem 0 0 0.62rem;cursor: pointer;}
+/* 登陆框关闭按钮 */
+.loginBox .close {
+	width: 0.28rem;
+	height: 0.28rem;
+	background: url(../images/public/closeBtn.png)no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 3;
+	bottom: -0.7rem;
+	left: 1.4rem;
+}
+
+.gameBox {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+/* 活动中心 */
+.activityCenter {
+	width: 100%;
+	position: absolute;
+}
+
+/* 顶部图 */
+.topPic {
+	width: 3.75rem;
+	height: 6rem;
+	position: relative;
+	background: url(../images/freeGame/topPic.png)no-repeat;
+	background-size: cover;
+	z-index: 5;
+}
+
+/* 立即抽取游戏 */
+.showGame {
+	width: 3.47rem;
+	height: 2.39rem;
+	background: linear-gradient(359deg,#1a244c 0%, #1f196c 100%);
+	box-shadow: 0px 2px 0px 0px rgba(16,15,86,0.47); 
+	position: absolute;
+	left: 0.13rem;
+	bottom: -0.24rem;
+}
+.showGame .gameBox1 {
+	width: 3.13rem;
+	height: 1.65rem;
+	background: rgba(10,15,43,0.30);
+	border-radius: 3px;
+	margin: 0.15rem 0 0 0.18rem;
+}
+
+
+
+.showGame .getGameBtn {
+	width: 1.58rem;
+	height: 0.51rem;
+	margin: 0.11rem 0 0 1rem;
+	background: url(../images/freeGame/getGameBtn.png)no-repeat;
+	background-size: cover;
+}
+
+/* 顶部之外的部分 */
+.activityInfo {
+	width: 3.75rem;
+	background-color: #12183a;
+	display: table;
+	position: absolute;
+	top: 6.66rem;
+}
+
+/* 活动详情 */
+.activityInfo .activityDetail {
+	width: 3.39rem;
+	height: 3.84rem;
+	background: linear-gradient(135deg,#7c2479 0%, rgba(63,17,112,0.53) 100%);
+	box-shadow: 0px 4px 10px 0px rgba(3,3,33,0.28); 
+	position: relative;
+	margin: 0.44rem 0 0 0.14rem;
+}
+
+.activityInfo .activityDetail .activityDetailInfo {
+	width: 3.39rem;
+	height: 3.76rem;
+	background: linear-gradient(0deg,#1a244d 0%, #1f196c);
+	box-shadow: 0px 4px 10px 0px rgba(3,3,33,0.17); 
+	position: absolute;
+	left: 0.05rem;
+	top: 0.08rem;
+}
+
+.detailTitle {
+	width: 2.24rem;
+	height: 0.42rem;
+	margin: 0.12rem 0 0 0.61rem;
+	background: url(../images/freeGame/detailTitle.png)no-repeat;
+	background-size: cover;
+}
+
+.detailIntrod {
+	width: 3rem;
+	height: 2.67rem;
+	margin: 0.21rem 0 0 0.19rem;
+}
+
+.introdOne {
+	width: 3rem;
+	height: 0.8rem;
+}
+
+.introdOne .oneText {
+	width: 2.64rem;
+	height: 0.48rem;
+	margin-left: 0.32rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: LEFT;
+	color: #b8b6b6;
+}
+
+.introdTwo {
+	width: 3rem;
+	height: 0.5rem;
+}
+
+.introdThree {
+	width: 3rem;
+	height: 0.8rem;
+}
+
+.introdFour {
+	width: 3rem;
+	height: 0.5rem;
+}
+
+.introdFour .fourText {
+	width: 2.64rem;
+	height: 0.15rem;
+	margin-left: 0.32rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: LEFT;
+	color: #b8b6b6;
+}
+
+.introdFour .fourTitle {
+	height: 0.24rem;
+	display: flex;
+	align-items: center;
+}
+
+.fourTitle .numberFour {
+	width: 0.21rem;
+	height: 0.24rem;
+	background: url(../images/freeGame/numberFour.png)no-repeat;
+	background-size: cover;
+}
+
+.fourTitle .text {
+	height: 0.18rem;
+	margin-left: 0.08rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Bold;
+	font-weight: 700;
+	text-align: RIGHT;
+	color: #ffffff;
+}
+
+.introdOne .oneTitle {
+	height: 0.24rem;
+	display: flex;
+	align-items: center;
+}
+
+.introdTwo .twoTitle {
+	height: 0.24rem;
+	display: flex;
+	align-items: center;
+}
+
+.introdThree .threeTitle {
+	height: 0.24rem;
+	display: flex;
+	align-items: center;
+}
+
+.introdThree .threeText {
+	width: 2.64rem;
+	height: 0.48rem;
+	margin-left: 0.32rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: LEFT;
+	color: #b8b6b6;
+}
+
+.threeTitle .numberThree {
+	width: 0.21rem;
+	height: 0.24rem;
+	background: url(../images/freeGame/numberThree.png)no-repeat;
+	background-size: cover;
+}
+
+.threeTitle .text {
+	height: 0.18rem;
+	margin-left: 0.08rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Bold;
+	font-weight: 700;
+	text-align: RIGHT;
+	color: #ffffff;
+}
+
+.twoTitle .numberTwo {
+	width: 0.21rem;
+	height: 0.24rem;
+	background: url(../images/freeGame/numberTwo.png)no-repeat;
+	background-size: cover;
+}
+
+.twoTitle .text {
+	height: 0.18rem;
+	margin-left: 0.08rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Bold;
+	font-weight: 700;
+	text-align: RIGHT;
+	color: #ffffff;
+}
+
+.introdTwo .TwoText {
+	width: 2.64rem;
+	height: 0.48rem;
+	margin-left: 0.32rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: LEFT;
+	color: #b8b6b6;
+}
+
+.oneTitle .numberOne {
+	width: 0.21rem;
+	height: 0.24rem;
+	background: url(../images/freeGame/numberOne.png)no-repeat;
+	background-size: cover;
+}
+
+.oneTitle .text {
+	width: 0.42rem;
+	height: 0.18rem;
+	margin-left: 0.08rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Bold;
+	font-weight: 700;
+	text-align: RIGHT;
+	color: #ffffff;
+}
+
+/* 如何启动游戏 */
+.howToPlay {
+	width: 3.4rem;
+	height: 0.48rem;
+	border: 1px solid #362FB3;
+	border-radius: 0.11rem;
+	/* border-image: linear-gradient(97deg, #362fb3 0%, #5a2baa 100%) 1 1; 
+	border-image: -webkit-linear-gradient(#362fb3,#5a2baa) 1 1;
+	border-image: -moz-linear-gradient(#362fb3,#5a2baa) 1 1;
+	border-image: -o-linear-gradient(#362fb3,#5a2baa) 1 1;
+	border-image: linear-gradient(#362fb3,#5a2baa) 1 1; */
+	margin: 0.2rem 0 0 0.13rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+
+.howToPlay .playItem {
+	width: 3.33rem;
+	height: 0.42rem;
+	background-color: #1f1c69;
+	border-radius: 0.1rem;
+	display: flex;
+	align-items: center;
+}
+
+.playItem .clickPic {
+	width: 0.21rem;
+	height: 0.24rem;
+	background-color: red;
+	margin-left: 0.23rem;
+	background: url(../images/freeGame/clickPic.png)no-repeat;
+	background-size: cover;
+}
+
+.playItem .clickText {
+	width: 1.96rem;
+	height: 0.18rem;
+	margin-left: 0.07rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	font-weight: 400;
+	text-align: RIGHT;
+	color: #ffffff;
+}
+
+/* 活动奖池 */
+.PoorBox {
+	width: 3.47rem;
+	height: 100%;
+	margin: 0.2rem 0 0 0.14rem;
+	position: relative;
+	overflow: hidden;
+}
+
+/* 背景色 */
+.backgroundPic {
+	width: 3.39rem;
+	height: 100%;
+	background: linear-gradient(146deg,#7c2579, rgba(5,0,5,0.15) 100%);
+	position: absolute;
+}
+
+/* 假盒子 */
+.falsePic {
+	width: 3.42rem;
+	height: 100%;
+	position: absolute;
+	left: 0.05rem;
+	top: 0.1rem;
+}
+
+/* 装游戏的盒子 */
+.showGameBox {
+	width: 3.42rem;
+	height: 100%;
+	background: linear-gradient(180deg,#1f1a6c, rgba(27,36,79,0.24) 100%);
+	position: relative;
+	left: 0.05rem;
+	top: 0.1rem;
+	overflow: hidden;
+}
+
+.showGameBox .poorTitle {
+	width: 2.23rem;
+	height: 0.41rem;
+	background-color: red;
+	margin: 0.1rem 0 0 0.68rem;
+	background: url(../images/freeGame/poorTitle.png)no-repeat;
+	background-size: cover;
+}
+
+.gameItemBox {
+	width: 3.2rem;
+	height: 100%;
+	margin-left: 0.09rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 0.2rem;
+}
+
+/* 单个游戏盒子 */
+.gameItem {
+	width: 1.57rem;
+	height: 1.02rem;
+	background: linear-gradient(180deg,#382eaf, #592baa 100%);
+	margin-top: 0.2rem;
+	position: relative;
+	border-radius: 0.05rem;
+}
+
+.gameItem .gameImg {
+	width: 1.57rem;
+	height: 0.75rem;
+	position: absolute;
+}
+
+/* 游戏名称 */
+.gameItem .gameName {
+	width: 0.7rem;
+	height: 0.22rem;
+	position: absolute;
+	left: 0.1rem;
+	top: 0.77rem;
+	font-size: 14px;
+	font-family: PingFang SC, PingFang SC-Regular;
+	text-align: LEFT;
+	color: #d8f0ff;
+	line-height: 23px;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* 游戏价格 */
+.gameItem .gamePirce {
+	min-width: 0.34rem;
+	height: 0.23rem;
+	position: absolute;
+	left: 1.1rem;
+	top: 0.77rem;
+	line-height: 0.23rem;
+}
+
+/* 弹出框 新用户专享 */
+.ejectBox {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.80);
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
+
+.ejectBox .ejectSmallBox {
+	width: 2.91rem;
+	height: 2.93rem;
+	position: absolute;
+	left: 0.33rem;
+	top: 1.89rem;
+}
+
+.ejectSmallBox .ejectGetGame {
+	width: 2.91rem;
+	height: 2.05rem;
+	background: url(../images/freeGame/ejectGetGame.png)no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+/* 游戏详情 */
+.ejectGetGame .gameDetail {
+	width: 1.81rem;
+	height: 0.86rem;
+	margin: 0.45rem 0 0 0.57rem;
+	position: relative;
+}
+
+/* 游戏图 */
+.gameDetail .gameImg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.gameDetail .titlePic {
+	width: 1.81rem;
+	height: 0.22rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/freeGame/titlePic.png)no-repeat;
+	background-size: cover;
+	text-align: center;
+	line-height: 0.22rem;
+}
+
+.titlePic .gameName {
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	color: #ffffff;
+	opacity: 0.8;
+	letter-spacing: 0px;
+}
+
+.gameDetail .priceLabel {
+	width: 0.63rem;
+	height: 0.19rem;
+	background: url(../images/freeGame/priceLabel.png)no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: -0.05rem;
+	right: 0;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+	line-height: 0.19rem;
+}
+
+.gameDetail .priceLabel .money {
+	font-size: 10px;
+}
+
+.ejectSmallBox .ejectText {
+	width: 1.9rem;
+	height: 0.16rem;
+	font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+	color: #cccccc;
+	margin: 0.15rem 0 0 0.54rem;
+}
+.ejectSmallBox .ejectBtn {
+	width: 1.58rem;
+	height: 0.35rem;
+	margin: 0.2rem 0 0 0.6rem;
+	background: url(../images/freeGame/ejectBtn.png)no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}

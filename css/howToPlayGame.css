@@ -1,0 +1,50 @@
+/* 顶部 */
+.topbar{width: 100%;height: 0.66rem;background-color: #051824;display: flex;align-items: center;}
+.topbar .topbarItem{width: 3.75rem;height: 0.36rem;display: flex;align-items: center;}
+.topbar .topbarItem .w4play{width: 1.04rem;height: 0.25rem;margin-left: 0.16rem;background: url(../images/index/w4playlogo.png)no-repeat;background-size: cover;}
+.topbar .topbarItem .serach{width: 1.36rem;height: 0.36rem;margin-left: 0.6rem;background-color: #0b273a;border-radius: 33px;display: flex;align-items: center;}
+.topbar .topbarItem .serach .serachbox{width: 0.9rem;height: 0.21rem;margin-left: 0.12rem;background-color: #0b273a;color: #FFFFFF;}
+.topbar .topbarItem .serach .serachlogo{width: 0.24rem;height: 0.24rem;background: url(../images/index/iconSearch.png)no-repeat;background-size: cover;}
+.topbar .topbarItem .userIcon{width: 0.36rem;height: 0.36rem;background-color: white;margin-left: 0.08rem;border-radius: 50%;}
+.topbar .topbarItem .userIcon img{width: 100%;height: 100%;}
+
+.howPic {width: 3.47rem;height: 1.41rem;margin: 0.13rem 0 0 0.14rem;background: url(../images/howToPlayingGame/howPlaying.png)no-repeat;background-size: cover;}
+.textBook {width: 3.47rem;height: 0.22rem;margin: 0.29rem 0 0 0.14rem;}
+.copyBtn {width: 1.95rem;line-height: 0.48rem;border: none;margin: 0.13rem 0 0 0.14rem;text-align: center;cursor: pointer;background-color: #1ebff3;}
+.copyComputer1 {width: 3.47rem;height: 0.44rem;margin: 0.44rem 0 0 0.14rem;}
+.website {width: 3.47rem;height: 0.34rem;margin: 0.1rem 0 0 0.14rem;background: url(../images/howToPlayingGame/website.png)no-repeat;background-size: cover;}
+.copyComputer2 {width: 3.47rem;height: 0.44rem;margin: 0.44rem 0 0 0.14rem;}
+.client {width: 0.55rem;height: 0.53rem;background-color: red;margin: 0.1rem 0 0 0.14rem;background: url(../images/howToPlayingGame/clinet.png)no-repeat;background-size: cover;}
+.copyComputer3 {width: 3.47rem;height: 0.44rem;margin: 0.44rem 0 0 0.14rem;}
+.clientPic {width: 3.47rem;height: 2.27rem;margin: 0.1rem 0 0 0.14rem;background: url(../images/howToPlayingGame/myGame.png)no-repeat;background-size: cover;}
+
+/* 登陆 */
+.container2 {width: 100%;height: 300%;background: rgba(6,26,40,0.47);position: absolute;z-index: 5;top: 0;left: 0;}
+.container2 .loginBox {width: 3.15rem;height: 3.55rem;background-color: #0d2d42;position: fixed;top: 1.8rem;left: 0.3rem;display: flex;flex-direction: column;border: 1px solid rgba(227,163,255,0.24);border-radius: 10px;}
+.loginBox .loginTitle {width: 2.82rem;height: 0.71rem;margin: 0.18rem 0 0 0.18rem;background: url(../images/public/bannerTitle.png)no-repeat;background-size: cover;}
+.loginBox .titleLight {width: 2.33rem;height: 1.84rem;position: absolute;left: 0.98rem;top: -0.98rem;background: url(../images/public/bannerPic.png)no-repeat;background-size: cover;}
+.container2 .loginBox .number1 {width: 0.6rem;height: 0.2rem;color: rgba(235,235,245,0.65);margin: 0.15rem 0 0 0.18rem;}
+.container2 .loginBox .number2 {width: 2.72rem;height: 0.36rem;background-color: rgba(5,24,36,0.8);margin: 0.04rem 0 0 0.18rem;display: flex;align-items: center;}
+.container2 .loginBox .number2 input{width: 1.7rem;height: 0.2rem;padding-left: 0.08rem;background-color: rgba(5,24,36,0.6);}
+.container2 .loginBox .message1 {width: 0.8rem;height: 0.2rem;color: rgba(235,235,245,0.65);margin: 0.12rem 0 0 0.18rem;}
+.container2 .loginBox .message2 {width: 2.72rem;height: 0.36rem;background-color: rgba(5,24,36,0.8);margin: 0.04rem 0 0 0.18rem;display: flex;align-items: center;}
+.container2 .loginBox .message2 input{width: 1.5rem;height: 0.2rem;padding-left: 0.08rem;background-color: rgba(5,24,36,0.6);}
+.container2 .loginBox .message2 .code{min-width: 1rem;height: 0.2rem;color: #5cd0ff;cursor: pointer;text-align: left;text-align: right;margin-left: 0.08rem;}
+.container2 .loginBox .agreement {width: 1.8rem;height: 0.2rem;margin: 0.10rem 0 0 0.15rem;display: flex;}
+.container2 .loginBox .agreement .agree1{width: 0.68rem;height: 0.2rem;text-align: center;color: rgba(216,240,255,0.65);}
+.container2 .loginBox .agreement .agree2{width: 1rem;height: 0.2rem;text-align: center;color: rgba(216,240,255,0.85);}
+.container2 .loginBox .loginBtn {width: 1.87rem;height: 0.45rem;line-height: 0.45rem;background: url(../images/public/loginBtn.png)no-repeat;background-size: cover;
+margin: 0.2rem 0 0 0.62rem;cursor: pointer;}
+/* 登陆框关闭按钮 */
+.loginBox .close {
+	width: 0.28rem;
+	height: 0.28rem;
+	background: url(../images/public/closeBtn.png)no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: 3;
+	bottom: -0.7rem;
+	left: 1.4rem;
+}
+
+.customerService {width: 106px;height: 105px;background: url(../images/detail/7moor.png)no-repeat;position: fixed;right: -10%;bottom: -5%;z-index: 99;}
